@@ -1,0 +1,1260 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>序列化 · GitBook学习笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="nick">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="req-resp.html" />
+    
+    
+    <link rel="prev" href="../quickstart/testing.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://ibash.cc" target="_blank" class="custom-link">Author's Blog</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">安装介绍</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../home/install.html">
+            
+                <a href="../home/install.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../home/example.html">
+            
+                <a href="../home/example.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    举例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">快速上手</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../quickstart/project.html">
+            
+                <a href="../quickstart/project.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    创建项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../quickstart/serializers.html">
+            
+                <a href="../quickstart/serializers.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../quickstart/views.html">
+            
+                <a href="../quickstart/views.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../quickstart/urls.html">
+            
+                <a href="../quickstart/urls.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../quickstart/settings.html">
+            
+                <a href="../quickstart/settings.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    Settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../quickstart/testing.html">
+            
+                <a href="../quickstart/testing.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    测试API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">教程</li>
+        
+        
+    
+        <li class="chapter active" data-level="3.1" data-path="serialization.html">
+            
+                <a href="serialization.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="req-resp.html">
+            
+                <a href="req-resp.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    Requests & Responses
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="classview.html">
+            
+                <a href="classview.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    类视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="auth-perms.html">
+            
+                <a href="auth-perms.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    认证和权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="hyperlink.html">
+            
+                <a href="hyperlink.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    关系和超链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="routers.html">
+            
+                <a href="routers.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    视图集合和路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="coreapi.html">
+            
+                <a href="coreapi.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    coreapi
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">API 指南</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../api/requests.html">
+            
+                <a href="../api/requests.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Requests
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../api/responses.html">
+            
+                <a href="../api/responses.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    Responses
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../api/views.html">
+            
+                <a href="../api/views.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    视图Views
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../api/gviews.html">
+            
+                <a href="../api/gviews.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    通用视图Generic views
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../api/viewsets.html">
+            
+                <a href="../api/viewsets.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    视图组Viewsets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../api/routers.html">
+            
+                <a href="../api/routers.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    路由器Routers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../api/parsers.html">
+            
+                <a href="../api/parsers.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    解析器Parsers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../api/renderers.html">
+            
+                <a href="../api/renderers.html">
+            
+                    
+                        <b>4.8.</b>
+                    
+                    渲染器Renderers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="../api/serializers.html">
+            
+                <a href="../api/serializers.html">
+            
+                    
+                        <b>4.9.</b>
+                    
+                    序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="../api/serializersfield.html">
+            
+                <a href="../api/serializersfield.html">
+            
+                    
+                        <b>4.10.</b>
+                    
+                    Serializer fields
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="../api/serializersrelat.html">
+            
+                <a href="../api/serializersrelat.html">
+            
+                    
+                        <b>4.11.</b>
+                    
+                    Serializer relations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="../api/validators.html">
+            
+                <a href="../api/validators.html">
+            
+                    
+                        <b>4.12.</b>
+                    
+                    校验器Validators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" data-path="../api/authentication.html">
+            
+                <a href="../api/authentication.html">
+            
+                    
+                        <b>4.13.</b>
+                    
+                    身份验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.14" data-path="../api/permissions.html">
+            
+                <a href="../api/permissions.html">
+            
+                    
+                        <b>4.14.</b>
+                    
+                    权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.15" data-path="../api/throttling.html">
+            
+                <a href="../api/throttling.html">
+            
+                    
+                        <b>4.15.</b>
+                    
+                    限流Throttling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.16" data-path="../api/filtering.html">
+            
+                <a href="../api/filtering.html">
+            
+                    
+                        <b>4.16.</b>
+                    
+                    过滤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.17" data-path="../api/pagination.html">
+            
+                <a href="../api/pagination.html">
+            
+                    
+                        <b>4.17.</b>
+                    
+                    分页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.18" data-path="../api/versioning.html">
+            
+                <a href="../api/versioning.html">
+            
+                    
+                        <b>4.18.</b>
+                    
+                    API 版本化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.19" data-path="../api/cnegotiation.html">
+            
+                <a href="../api/cnegotiation.html">
+            
+                    
+                        <b>4.19.</b>
+                    
+                    内容协商Content negotiation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.20" data-path="../api/metadata.html">
+            
+                <a href="../api/metadata.html">
+            
+                    
+                        <b>4.20.</b>
+                    
+                    元数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.21" data-path="../api/schemas.html">
+            
+                <a href="../api/schemas.html">
+            
+                    
+                        <b>4.21.</b>
+                    
+                    Schemas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.22" data-path="../api/formatsuffixes.html">
+            
+                <a href="../api/formatsuffixes.html">
+            
+                    
+                        <b>4.22.</b>
+                    
+                    Format suffixes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.23" data-path="../api/urls.html">
+            
+                <a href="../api/urls.html">
+            
+                    
+                        <b>4.23.</b>
+                    
+                    Returning URLs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.24" data-path="../api/exceptions.html">
+            
+                <a href="../api/exceptions.html">
+            
+                    
+                        <b>4.24.</b>
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.25" data-path="../api/statuscodes.html">
+            
+                <a href="../api/statuscodes.html">
+            
+                    
+                        <b>4.25.</b>
+                    
+                    状态码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.26" data-path="../api/testing.html">
+            
+                <a href="../api/testing.html">
+            
+                    
+                        <b>4.26.</b>
+                    
+                    测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.27" data-path="../api/settings.html">
+            
+                <a href="../api/settings.html">
+            
+                    
+                        <b>4.27.</b>
+                    
+                    Settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">最佳实践</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../topics/docs.html">
+            
+                <a href="../topics/docs.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    API文档生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >序列化</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5E8F;&#x5217;&#x5316;">&#x5E8F;&#x5217;&#x5316;</h1>
+<h2 id="&#x4ECB;&#x7ECD;">&#x4ECB;&#x7ECD;</h2>
+<p>&#x672C;&#x7AE0;&#x5C06;&#x4ECB;&#x7ECD;&#xFF0C;&#x5982;&#x4F55;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x652F;&#x6301;&#x4EE3;&#x7801;&#x9AD8;&#x4EAE;&#x7684;WebAPI&#x3002;&#x5728;&#x6B64;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4ECB;&#x7ECD;&#x6784;&#x6210;REST framework&#x6846;&#x67B6;&#x7684;&#x5404;&#x4E2A;&#x7EC4;&#x4EF6;&#xFF0C;&#x5E76;&#x8BA9;&#x60A8;&#x5BF9;&#x6240;&#x6709;&#x7EC4;&#x4EF6;&#x7684;&#x7EC4;&#x5408;&#x65B9;&#x5F0F;&#x6709;&#x4E00;&#x4E2A;&#x5168;&#x9762;&#x7684;&#x4E86;&#x89E3;&#x3002;</p>
+<p>&#x6B64;&#x7AE0;&#x6559;&#x7A0B;&#x6BD4;&#x8F83;&#x6DF1;&#x5165;&#xFF0C;&#x6240;&#x4EE5;&#x8BF7;&#x82B1;&#x4E00;&#x4E9B;&#x65F6;&#x95F4;&#x4ED4;&#x7EC6;&#x7684;&#x9605;&#x8BFB;&#x3002; &#x5982;&#x679C;&#x60A8;&#x53EA;&#x60F3;&#x5FEB;&#x901F;&#x6D4F;&#x89C8;&#x4E00;&#x4E0B;&#xFF0C;&#x5219;&#x5E94;&#x8BE5;&#x8F6C;&#x5230;&#x5FEB;&#x901F;&#x5165;&#x95E8;&#x6587;&#x6863;&#x3002;</p>
+<hr>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x672C;&#x6559;&#x7A0B;&#x7684;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x5728;GitHub&#x7684;<a href="https://github.com/encode/rest-framework-tutorial" target="_blank">tomchristie/rest-framework-tutorial</a>&#x5E93;&#x4E2D;&#x627E;&#x5230;&#x3002;&#x7EBF;&#x4E0A;&#x6D4B;&#x8BD5;&#x7248;&#xFF0C;&#x8BF7;&#x70B9;&#x51FB;<a href="https://restframework.herokuapp.com/" target="_blank">&#x8FD9;&#x91CC;</a>&#x3002;</p>
+<hr>
+<h2 id="&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;env&#x73AF;&#x5883;">&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;ENV&#x73AF;&#x5883;</h2>
+<p>&#x5728;&#x6211;&#x4EEC;&#x505A;&#x4EFB;&#x4F55;&#x4E8B;&#x60C5;&#x4E4B;&#x524D;&#xFF0C;&#x6211;&#x4EEC;&#x90FD;&#x5E94;&#x4F7F;&#x7528;<code>virtualenv</code>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x865A;&#x62DF;&#x73AF;&#x5883;&#x3002;&#x8FD9;&#x5C06;&#x4FDD;&#x8BC1;&#x6211;&#x4EEC;&#x7684;&#x914D;&#x7F6E;&#x4E0E;&#x6211;&#x4EEC;&#x6B63;&#x5728;&#x8FDB;&#x884C;&#x7684;&#x5176;&#x4ED6;&#x4EFB;&#x4F55;&#x9879;&#x76EE;&#x7684;&#x914D;&#x7F6E;&#x4FDD;&#x6301;&#x826F;&#x597D;&#x7684;&#x9694;&#x79BB;&#x3002;</p>
+<pre><code class="lang-python">virtualenv env
+source env/bin/activate
+</code></pre>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x8FDB;&#x5165;&#x4E86;virtualenv&#x73AF;&#x5883;&#xFF0C;&#x7136;&#x540E;&#x5B89;&#x88C5;&#x6211;&#x4EEC;&#x6240;&#x9700;&#x7684;&#x4F9D;&#x8D56;&#x5305;&#xFF1A;</p>
+<pre><code class="lang-python">pip install django
+pip install djangorestframework
+pip install pygments  <span class="hljs-comment"># &#x8FD9;&#x4E2A;&#x5E93;&#x7528;&#x4F5C;&#x8BED;&#x6CD5;&#x9AD8;&#x4EAE;</span>
+</code></pre>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x8981;&#x968F;&#x65F6;&#x9000;&#x51FA;<code>virtualenv</code>&#x73AF;&#x5883;&#xFF0C;&#x53EA;&#x9700;&#x952E;&#x5165;<code>deactivate</code>&#x3002;&#x8981;&#x4E86;&#x89E3;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#xFF0C;&#x8BF7;&#x53C2;&#x9605;<a href="https://virtualenv.pypa.io/en/latest/index.html" target="_blank">virtualenv&#x6587;&#x6863;</a>&#x3002;</p>
+<h2 id="&#x5F00;&#x59CB;">&#x5F00;&#x59CB;</h2>
+<p>&#x9996;&#x5148;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x9879;&#x76EE;&#xFF1A;</p>
+<pre><code class="lang-python">cd ~
+django-admin.py startproject tutorial
+cd tutorial
+</code></pre>
+<p>&#x9879;&#x76EE;&#x521B;&#x5EFA;&#x6210;&#x529F;&#x540E;,&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;app, &#x6211;&#x4EEC;&#x5C06;&#x7528;&#x5B83;&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;WebAPI&#x3002;</p>
+<pre><code class="lang-python">python manage.py startapp snippets
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728;<code>INSTALLED_APPS</code>&#x6DFB;&#x52A0;&#x65B0;<code>snippets</code>app&#x548C;<code>rest_framework</code>app&#x3002;</p>
+<p>&#x7F16;&#x8F91;&#x8FD9;&#x4E2A;<code>tutorial/settings.py</code>&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code class="lang-python">INSTALLED_APPS = (
+    ...
+    <span class="hljs-string">&apos;rest_framework&apos;</span>,
+    <span class="hljs-string">&apos;snippets.apps.SnippetsConfig&apos;</span>,
+)
+</code></pre>
+<h2 id="&#x521B;&#x5EFA;model">&#x521B;&#x5EFA;model</h2>
+<p>&#x9996;&#x5148;&#x5C06;&#x5148;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;<code>Snippet</code> Model, &#x521B;&#x5EFA;<code>snippets/models.py</code>&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x6CE8;&#x610F;:&#x826F;&#x597D;&#x7684;&#x7F16;&#x7A0B;&#x5B9E;&#x8DF5;&#x662F;&#x5305;&#x62EC;&#x6CE8;&#x91CA;&#x7684;&#x3002;&#x5728;&#x5B98;&#x65B9;&#x4EE3;&#x7801;&#x7248;&#x672C;&#x5E93;&#x91CC;&#x53EF;&#x4EE5;&#x627E;&#x5230;&#x6CE8;&#x91CA;,&#x6B64;&#x5904;&#x7701;&#x7565;&#x4E86;&#x6CE8;&#x91CA;,&#x53EA;&#x9700;&#x8981;&#x5173;&#x6CE8;&#x4EE3;&#x7801;&#x5373;&#x53EF;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.db <span class="hljs-keyword">import</span> models
+<span class="hljs-keyword">from</span> pygments.lexers <span class="hljs-keyword">import</span> get_all_lexers
+<span class="hljs-keyword">from</span> pygments.styles <span class="hljs-keyword">import</span> get_all_styles
+
+LEXERS = [item <span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> get_all_lexers() <span class="hljs-keyword">if</span> item[<span class="hljs-number">1</span>]]
+LANGUAGE_CHOICES = sorted([(item[<span class="hljs-number">1</span>][<span class="hljs-number">0</span>], item[<span class="hljs-number">0</span>]) <span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> LEXERS])
+STYLE_CHOICES = sorted((item, item) <span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> get_all_styles())
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Snippet</span><span class="hljs-params">(models.Model)</span>:</span>
+    created = models.DateTimeField(auto_now_add=<span class="hljs-keyword">True</span>)
+    title = models.CharField(max_length=<span class="hljs-number">100</span>, blank=<span class="hljs-keyword">True</span>, default=<span class="hljs-string">&apos;&apos;</span>)
+    code = models.TextField()
+    linenos = models.BooleanField(default=<span class="hljs-keyword">False</span>)
+    language = models.CharField(choices=LANGUAGE_CHOICES, default=<span class="hljs-string">&apos;python&apos;</span>, max_length=<span class="hljs-number">100</span>)
+    style = models.CharField(choices=STYLE_CHOICES, default=<span class="hljs-string">&apos;friendly&apos;</span>, max_length=<span class="hljs-number">100</span>)
+
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Meta</span>:</span>
+        ordering = (<span class="hljs-string">&apos;created&apos;</span>,)
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x6839;&#x636E;snippet model&#x521D;&#x59CB;&#x5316;,&#x5E76;&#x4E14;&#x540C;&#x6B65;&#x5230;&#x6570;&#x636E;&#x5E93;&#x3002;</p>
+<pre><code class="lang-python">python manage.py makemigrations snippets
+python manage.py migrate
+</code></pre>
+<h2 id="&#x521B;&#x5EFA;&#x4E00;&#x4E2A;serializer-&#x7C7B;">&#x521B;&#x5EFA;&#x4E00;&#x4E2A;Serializer &#x7C7B;</h2>
+<p>&#x7B2C;&#x4E00;&#x6B65;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4E3A;WebAPI&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x6765;&#x628A;<code>snippet</code>&#x5BF9;&#x8C61;&#x8F6C;&#x6362;&#x6210;<code>json</code>&#x6570;&#x636E;&#x683C;&#x5F0F;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x58F0;&#x660E;&#x4E0E;Django&#x8868;&#x5355;(forms)&#x975E;&#x5E38;&#x76F8;&#x4F3C;&#x7684;&#x5E8F;&#x5217;&#x5316;&#x5668;(serializers)&#x6765;&#x5B9E;&#x73B0;&#x8FD9;&#x4E00;&#x70B9;&#x3002;</p>
+<p>&#x5728;<code>snippets</code>&#x76EE;&#x5F55;&#x4E2D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;<code>serializers.py</code>&#x5E76;&#x6DFB;&#x52A0;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> rest_framework <span class="hljs-keyword">import</span> serializers
+<span class="hljs-keyword">from</span> snippets.models <span class="hljs-keyword">import</span> Snippet, LANGUAGE_CHOICES, STYLE_CHOICES
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SnippetSerializer</span><span class="hljs-params">(serializers.Serializer)</span>:</span>
+    id = serializers.IntegerField(read_only=<span class="hljs-keyword">True</span>)
+    title = serializers.CharField(required=<span class="hljs-keyword">False</span>, allow_blank=<span class="hljs-keyword">True</span>, max_length=<span class="hljs-number">100</span>)
+    code = serializers.CharField(style={<span class="hljs-string">&apos;base_template&apos;</span>: <span class="hljs-string">&apos;textarea.html&apos;</span>})
+    linenos = serializers.BooleanField(required=<span class="hljs-keyword">False</span>)
+    language = serializers.ChoiceField(choices=LANGUAGE_CHOICES, default=<span class="hljs-string">&apos;python&apos;</span>)
+    style = serializers.ChoiceField(choices=STYLE_CHOICES, default=<span class="hljs-string">&apos;friendly&apos;</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">create</span><span class="hljs-params">(self, validated_data)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;
+        &#x5982;&#x679C;&#x6570;&#x636E;&#x5408;&#x6CD5;&#x6709;&#x6548;&#xFF0C;&#x521B;&#x5EFA;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;`Snippet`&#x5B9E;&#x4F8B;&#x3002;
+        &quot;&quot;&quot;</span>
+        <span class="hljs-keyword">return</span> Snippet.objects.create(**validated_data)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span><span class="hljs-params">(self, instance, validated_data)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;
+        &#x5982;&#x679C;&#x6570;&#x636E;&#x5408;&#x6CD5;&#x6709;&#x6548;&#xFF0C;&#x66F4;&#x65B0;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5DF2;&#x5B58;&#x5728;&#x7684;`Snippet`&#x6BB5;&#x5B9E;&#x4F8B;&#x3002;
+        &quot;&quot;&quot;</span>
+        instance.title = validated_data.get(<span class="hljs-string">&apos;title&apos;</span>, instance.title)
+        instance.code = validated_data.get(<span class="hljs-string">&apos;code&apos;</span>, instance.code)
+        instance.linenos = validated_data.get(<span class="hljs-string">&apos;linenos&apos;</span>, instance.linenos)
+        instance.language = validated_data.get(<span class="hljs-string">&apos;language&apos;</span>, instance.language)
+        instance.style = validated_data.get(<span class="hljs-string">&apos;style&apos;</span>, instance.style)
+        instance.save()
+        <span class="hljs-keyword">return</span> instance
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x5E8F;&#x5217;&#x5316;&#x5668;(<code>serializers</code>)&#x7C7B;&#x7684;&#x7B2C;&#x4E00;&#x90E8;&#x5206;&#x5B9A;&#x4E49;&#x4E86;&#x5E8F;&#x5217;&#x5316;/&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x5B57;&#x6BB5;&#x3002;</p>
+<p>&#x8BE5;&#x7C7B;&#x4E2D;&#x7684;<code>create()</code>&#x548C;<code>update()</code>&#x65B9;&#x6CD5;&#x5219;&#x5B9A;&#x4E49;&#x4E86;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x8C03;&#x7528;<code>serializer.save()</code>&#x65F6;&#x5982;&#x4F55;&#x521B;&#x5EFA;&#x6216;&#x4FEE;&#x6539;&#x5B9E;&#x4F8B;&#x3002;</p>
+<p>&#x5E8F;&#x5217;&#x5316;&#x5668;(<code>serializers</code>)&#x7C7B;&#x4E0E;Django Form&#x7C7B;&#x975E;&#x5E38;&#x76F8;&#x4F3C;&#xFF0C;&#x5E76;&#x5728;&#x5404;&#x4E2A;&#x5B57;&#x6BB5;&#x4E2D;&#x5305;&#x542B;&#x7C7B;&#x4F3C;&#x7684;&#x6570;&#x636E;&#x6821;&#x9A8C;&#x6807;&#x5FD7;&#xFF0C;&#x4F8B;&#x5982;<code>required</code>&#xFF0C;<code>max_length</code>&#x548C;<code>default</code>&#x3002;</p>
+<p>&#x4E0A;&#x9762;&#x7684;&#x5B57;&#x6BB5;&#x6807;&#x5FD7;&#x8FD8;&#x53EF;&#x4EE5;&#x63A7;&#x5236;&#x5728;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#x5E94;&#x8BE5;&#x5982;&#x4F55;&#x5C55;&#x793A;&#x5E8F;&#x5217;&#x5316;&#x7A0B;&#x5E8F;&#x3002;&#x4F8B;&#x5982;&#x5F53;&#x6E32;&#x67D3;&#x4E3A;HTML&#x65F6;&#xFF0C;<code>{&apos;base_template&apos;: &apos;textarea.html&apos;}</code>&#x6807;&#x5FD7;&#x7B49;&#x540C;&#x4E8E;Django Form&#x7C7B;&#x4E2D;&#x7684;<code>widget=widgets.Textarea</code>&#x3002;&#x8FD9;&#x5BF9;&#x4E8E;&#x63A7;&#x5236;&#x5982;&#x4F55;&#x663E;&#x793A;&#x53EF;&#x6D4F;&#x89C8;&#x7684;API&#x7279;&#x522B;&#x6709;&#x7528;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x672C;&#x6559;&#x7A0B;&#x540E;&#x9762;&#x770B;&#x5230;&#x7684;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5B9E;&#x9645;&#x4E0A;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;<code>ModelSerializer</code>&#x7C7B;&#x8282;&#x7701;&#x4E00;&#x4E9B;&#x65F6;&#x95F4;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x540E;&#x9762;&#x4F1A;&#x770B;&#x5230;&#xFF0C;&#x4F46;&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x5148;&#x7406;&#x89E3;&#x5E8F;&#x5217;&#x5316;&#x5668;&#x662F;&#x5982;&#x4F55;&#x5B9A;&#x4E49;&#x7684;&#x3002;</p>
+<h2 id="&#x4F7F;&#x7528;serializers">&#x4F7F;&#x7528;Serializers</h2>
+<p>&#x5728;&#x8FDB;&#x4E00;&#x6B65;&#x8BA8;&#x8BBA;&#x4E4B;&#x524D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x5148;&#x719F;&#x6089;&#x4F7F;&#x7528;&#x5E8F;&#x5217;&#x5316;&#x5668;(<code>Serializer</code>)&#x7C7B;&#x3002;&#x8BA9;&#x6211;&#x4EEC;&#x8FDB;&#x5165;Django shell&#xFF1A;</p>
+<pre><code class="lang-python">python manage.py shell
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x5BFC;&#x5165;&#x4E00;&#x4E9B;&#x6A21;&#x5757;, &#x7136;&#x540E;&#x521B;&#x5EFA;&#x4E00;&#x4E9B;&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> snippets.models <span class="hljs-keyword">import</span> Snippet
+<span class="hljs-keyword">from</span> snippets.serializers <span class="hljs-keyword">import</span> SnippetSerializer
+<span class="hljs-keyword">from</span> rest_framework.renderers <span class="hljs-keyword">import</span> JSONRenderer
+<span class="hljs-keyword">from</span> rest_framework.parsers <span class="hljs-keyword">import</span> JSONParser
+
+snippet = Snippet(code=<span class="hljs-string">&apos;foo = &quot;bar&quot;\n&apos;</span>)
+snippet.save()
+
+snippet = Snippet(code=<span class="hljs-string">&apos;print &quot;hello, world&quot;\n&apos;</span>)
+snippet.save()
+</code></pre>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x6709;&#x53EF;&#x64CD;&#x4F5C;&#x7684;&#x5B9E;&#x4F8B;&#x4E86;&#x3002;&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x770B;&#x5E8F;&#x5217;&#x5316;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-python">serializer = SnippetSerializer(snippet)
+serializer.data
+<span class="hljs-comment"># {&apos;id&apos;: 2, &apos;title&apos;: u&apos;&apos;, &apos;code&apos;: u&apos;print &quot;hello, world&quot;\n&apos;, &apos;linenos&apos;: False, &apos;language&apos;: u&apos;python&apos;, &apos;style&apos;: u&apos;friendly&apos;}</span>
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x5C06;<code>&#x6A21;&#x578B;&#x5B9E;&#x4F8B;</code>&#x8F6C;&#x6362;&#x4E3A;Python&#x539F;&#x751F;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;&#x6211;&#x4EEC;&#x5C06;&#x6570;&#x636E;&#x8F6C;&#x6362;&#x4E3A;json,&#x5B8C;&#x6210;&#x5E8F;&#x5217;&#x5316;&#xFF1A;</p>
+<pre><code class="lang-python">content = JSONRenderer().render(serializer.data)
+content
+<span class="hljs-comment"># &apos;{&quot;id&quot;: 2, &quot;title&quot;: &quot;&quot;, &quot;code&quot;: &quot;print \\&quot;hello, world\\&quot;\\n&quot;, &quot;linenos&quot;: false, &quot;language&quot;: &quot;python&quot;, &quot;style&quot;: &quot;friendly&quot;}&apos;</span>
+</code></pre>
+<p>&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x4E5F;&#x662F;&#x76F8;&#x4F3C;&#x7684;&#x3002;&#x9996;&#x5148;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4E00;&#x4E2A;stream&#x89E3;&#x6790;&#x4E3A;Python&#x539F;&#x751F;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.utils.six <span class="hljs-keyword">import</span> BytesIO
+
+stream = BytesIO(content)
+data = JSONParser().parse(stream)
+</code></pre>
+<p>&#x7136;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x8FD9;&#x4E9B;&#x539F;&#x751F;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E3A;&#x5BF9;&#x8C61;&#xFF1A;</p>
+<pre><code class="lang-python">serializer = SnippetSerializer(data=data)
+serializer.is_valid()
+<span class="hljs-comment"># True</span>
+serializer.validated_data
+<span class="hljs-comment"># OrderedDict([(&apos;title&apos;, &apos;&apos;), (&apos;code&apos;, &apos;print &quot;hello, world&quot;\n&apos;), (&apos;linenos&apos;, False), (&apos;language&apos;, &apos;python&apos;), (&apos;style&apos;, &apos;friendly&apos;)])</span>
+serializer.save()
+<span class="hljs-comment"># &lt;Snippet: Snippet object&gt;</span>
+</code></pre>
+<p>&#x8FD9;&#x4E2A;API&#x548C;Django Form&#x7684;&#x5DE5;&#x4F5C;&#x65B9;&#x5F0F;&#x662F;&#x591A;&#x4E48;&#x76F8;&#x4F3C;&#x3002;&#x5F53;&#x6211;&#x4EEC;&#x5F00;&#x59CB;&#x4F7F;&#x7528;&#x5E8F;&#x5217;&#x5316;&#x5668;&#x7F16;&#x5199;&#x89C6;&#x56FE;(<code>view</code>)&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x76F8;&#x4F3C;&#x6027;&#x5E94;&#x8BE5;&#x53D8;&#x5F97;&#x66F4;&#x52A0;&#x660E;&#x663E;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x5E8F;&#x5217;&#x5316;<code>queryset</code>(&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x96C6;)&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x6A21;&#x578B;&#x5B9E;&#x4F8B;&#x3002;&#x4E3A;&#x4E86;&#x5B9E;&#x73B0;&#x8FD9;&#x4E00;&#x64CD;&#x4F5C;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x5728;&#x5E8F;&#x5217;&#x5316;&#x5668;&#x53C2;&#x6570;&#x4E2D;&#x6DFB;&#x52A0;<code>many=True</code>&#x6807;&#x8BB0;&#x3002;</p>
+<pre><code class="lang-python">serializer = SnippetSerializer(Snippet.objects.all(), many=<span class="hljs-keyword">True</span>)
+serializer.data
+<span class="hljs-comment"># [OrderedDict([(&apos;id&apos;, 1), (&apos;title&apos;, u&apos;&apos;), (&apos;code&apos;, u&apos;foo = &quot;bar&quot;\n&apos;), (&apos;linenos&apos;, False), (&apos;language&apos;, &apos;python&apos;), (&apos;style&apos;, &apos;friendly&apos;)]), OrderedDict([(&apos;id&apos;, 2), (&apos;title&apos;, u&apos;&apos;), (&apos;code&apos;, u&apos;print &quot;hello, world&quot;\n&apos;), (&apos;linenos&apos;, False), (&apos;language&apos;, &apos;python&apos;), (&apos;style&apos;, &apos;friendly&apos;)]), OrderedDict([(&apos;id&apos;, 3), (&apos;title&apos;, u&apos;&apos;), (&apos;code&apos;, u&apos;print &quot;hello, world&quot;&apos;), (&apos;linenos&apos;, False), (&apos;language&apos;, &apos;python&apos;), (&apos;style&apos;, &apos;friendly&apos;)])]</span>
+</code></pre>
+<h2 id="&#x4F7F;&#x7528;modelserializers">&#x4F7F;&#x7528;ModelSerializers</h2>
+<p>&#x6211;&#x4EEC;<code>SnippetSerializer</code>&#x7C7B;&#x548C;<code>Snippet</code>Model&#x4E2D;&#x7684;&#x5927;&#x91CF;&#x4FE1;&#x606F;&#x90FD;&#x662F;&#x91CD;&#x590D;&#x7684;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x80FD;&#x8BA9;&#x4EE3;&#x7801;&#x66F4;&#x7B80;&#x6D01;&#x4E00;&#x70B9;&#xFF0C;&#x90A3;&#x5C31;&#x66F4;&#x597D;&#x4E86;&#xFF01;</p>
+<p>&#x5C31;&#x50CF;Django&#x63D0;&#x4F9B;<code>Form</code>&#x7C7B;&#x548C;<code>ModelForm</code>&#x7C7B;&#x4E00;&#x6837;&#xFF0C;REST&#x6846;&#x67B6;&#x5305;&#x542B;<code>Serializer</code>&#x7C7B;&#x548C;<code>ModelSerializer</code>&#x7C7B;&#x3002;</p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x7528;<code>ModelSerializer</code>&#x7C7B;&#x91CD;&#x6784;&#x6211;&#x4EEC;&#x7684;&#x5E8F;&#x5217;&#x5316;&#x7A0B;&#x5E8F;&#x3002;&#x6253;&#x5F00;<code>snippets/serializers.py</code>&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x66FF;&#x6362;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SnippetSerializer</span><span class="hljs-params">(serializers.ModelSerializer)</span>:</span>
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Meta</span>:</span>
+        model = Snippet
+        fields = (<span class="hljs-string">&apos;id&apos;</span>, <span class="hljs-string">&apos;title&apos;</span>, <span class="hljs-string">&apos;code&apos;</span>, <span class="hljs-string">&apos;linenos&apos;</span>, <span class="hljs-string">&apos;language&apos;</span>, <span class="hljs-string">&apos;style&apos;</span>)
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6253;&#x5370;&#x6765;&#x68C0;&#x67E5;&#x5E8F;&#x5217;&#x5316;&#x7A0B;&#x5E8F;&#x5B9E;&#x4F8B;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5B57;&#x6BB5;&#x3002;&#x4F7F;&#x7528;<code>python manage.py shell</code>&#x6253;&#x5F00;Django shell&#xFF0C;&#x7136;&#x540E;&#x5C1D;&#x8BD5;&#x4EE5;&#x4E0B;&#x64CD;&#x4F5C;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> snippets.serializers <span class="hljs-keyword">import</span> SnippetSerializer
+serializer = SnippetSerializer()
+print(repr(serializer))
+<span class="hljs-comment"># SnippetSerializer():</span>
+<span class="hljs-comment">#    id = IntegerField(label=&apos;ID&apos;, read_only=True)</span>
+<span class="hljs-comment">#    title = CharField(allow_blank=True, max_length=100, required=False)</span>
+<span class="hljs-comment">#    code = CharField(style={&apos;base_template&apos;: &apos;textarea.html&apos;})</span>
+<span class="hljs-comment">#    linenos = BooleanField(required=False)</span>
+<span class="hljs-comment">#    language = ChoiceField(choices=[(&apos;Clipper&apos;, &apos;FoxPro&apos;), (&apos;Cucumber&apos;, &apos;Gherkin&apos;), (&apos;RobotFramework&apos;, &apos;RobotFramework&apos;), (&apos;abap&apos;, &apos;ABAP&apos;), (&apos;ada&apos;, &apos;Ada&apos;)...</span>
+<span class="hljs-comment">#    style = ChoiceField(choices=[(&apos;autumn&apos;, &apos;autumn&apos;), (&apos;borland&apos;, &apos;borland&apos;), (&apos;bw&apos;, &apos;bw&apos;), (&apos;colorful&apos;, &apos;colorful&apos;)...</span>
+</code></pre>
+<p>&#x8BB0;&#x4F4F;<code>ModelSerializer</code>&#x7C7B;&#x6CA1;&#x6709;&#x505A;&#x4EFB;&#x4F55;&#x7279;&#x522B;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x5B83;&#x4EEC;&#x53EA;&#x662F;&#x521B;&#x5EFA;<code>serializer</code>&#x7684;&#x4E00;&#x4E2A;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;:</p>
+<ol>
+<li>&#x81EA;&#x52A8;&#x68C0;&#x67E5;&#x5E76;&#x786E;&#x5B9A;&#x5B57;&#x6BB5;&#x3002;</li>
+<li>&#x7B80;&#x5355;&#x7684;&#x5B9E;&#x73B0;&#x4E86;<code>create()</code>&#x548C;<code>update()</code>&#x65B9;&#x6CD5;&#x3002;</li>
+</ol>
+<h2 id="&#x4F7F;&#x7528;serializer&#x6765;&#x7F16;&#x5199;&#x6B63;&#x5E38;&#x7684;django&#x89C6;&#x56FE;">&#x4F7F;&#x7528;Serializer&#x6765;&#x7F16;&#x5199;&#x6B63;&#x5E38;&#x7684;Django&#x89C6;&#x56FE;</h2>
+<p>&#x6211;&#x4EEC;&#x6765;&#x770B;&#x770B;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x65B0;&#x7684;Serializer&#x7C7B;&#x6765;&#x7F16;&#x5199;&#x4E00;&#x4E9B;API&#x89C6;&#x56FE;&#x3002;&#x76EE;&#x524D;&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x4F1A;&#x4F7F;&#x7528;&#x4EFB;&#x4F55;REST&#x6846;&#x67B6;&#x7684;&#x5176;&#x4ED6;&#x529F;&#x80FD;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x4F1A;&#x5C06;&#x89C6;&#x56FE;&#x7F16;&#x5199;&#x4E3A;&#x5E38;&#x89C4;&#x7684;Django&#x89C6;&#x56FE;&#x3002;</p>
+<p>&#x7F16;&#x8F91;<code>snippets/views.py</code>&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x6DFB;&#x52A0;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.http <span class="hljs-keyword">import</span> HttpResponse, JsonResponse
+<span class="hljs-keyword">from</span> django.views.decorators.csrf <span class="hljs-keyword">import</span> csrf_exempt
+<span class="hljs-keyword">from</span> rest_framework.renderers <span class="hljs-keyword">import</span> JSONRenderer
+<span class="hljs-keyword">from</span> rest_framework.parsers <span class="hljs-keyword">import</span> JSONParser
+<span class="hljs-keyword">from</span> snippets.models <span class="hljs-keyword">import</span> Snippet
+<span class="hljs-keyword">from</span> snippets.serializers <span class="hljs-keyword">import</span> SnippetSerializer
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x7684;API&#x6700;&#x57FA;&#x672C;&#x7684;&#x529F;&#x80FD;&#x662F;&#xFF0C;&#x652F;&#x6301;&#x5217;&#x51FA;&#x6240;&#x6709;snippets&#x5B9E;&#x4F8B;&#xFF0C;&#x6216;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;snippets&#x5B9E;&#x4F8B;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-meta">@csrf_exempt</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">snippet_list</span><span class="hljs-params">(request)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;
+    &#x5C55;&#x793A;&#x6240;&#x6709;&#x7684;snippets, &#x6216;&#x8005;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;snippet.
+    &quot;&quot;&quot;</span>
+    <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&apos;GET&apos;</span>:
+        snippets = Snippet.objects.all()
+        serializer = SnippetSerializer(snippets, many=<span class="hljs-keyword">True</span>)
+        <span class="hljs-keyword">return</span> JsonResponse(serializer.data, safe=<span class="hljs-keyword">False</span>)
+
+    <span class="hljs-keyword">elif</span> request.method == <span class="hljs-string">&apos;POST&apos;</span>:
+        data = JSONParser().parse(request)
+        serializer = SnippetSerializer(data=data)
+        <span class="hljs-keyword">if</span> serializer.is_valid():
+            serializer.save()
+            <span class="hljs-keyword">return</span> JsonResponse(serializer.data, status=<span class="hljs-number">201</span>)
+        <span class="hljs-keyword">return</span> JsonResponse(serializer.errors, status=<span class="hljs-number">400</span>)
+</code></pre>
+<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x6CA1;&#x6709;CSRF&#x4EE4;&#x724C;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x8BBF;&#x95EE;&#x5230;&#x8FD9;&#x4E2A;&#x89C6;&#x56FE;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5C06;&#x89C6;&#x56FE;&#x6807;&#x8BB0;&#x4E3A;<code>csrf_exempt</code>&#x3002;&#x6B63;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#x4F60;&#x4E0D;&#x5E94;&#x8BE5;&#x8FD9;&#x4E48;&#x505A;&#xFF0C;&#x5E76;&#x4E14;REST framework&#x63D0;&#x4F9B;&#x4E86;&#x66F4;&#x9AD8;&#x7EA7;&#x66F4;&#x5B89;&#x5168;&#x7684;&#x505A;&#x6CD5;&#xFF0C;&#x4F46;&#x5B83;&#x73B0;&#x5728;&#x5C31;&#x53EF;&#x4EE5;&#x6EE1;&#x8DB3;&#x6211;&#x4EEC;&#x9700;&#x6C42;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x8FD8;&#x9700;&#x8981;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x89C6;&#x56FE;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x67E5;&#x770B;&#xFF0C;&#x66F4;&#x65B0;&#x6216;&#x5220;&#x9664;&#x64CD;&#x4F5C;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-meta">@csrf_exempt</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">snippet_detail</span><span class="hljs-params">(request, pk)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;
+    &#x67E5;&#x770B;, &#x66F4;&#x65B0; &#x6216;&#x8005; &#x5220;&#x9664; &#x4E00;&#x4E2A; snippet.
+    &quot;&quot;&quot;</span>
+    <span class="hljs-keyword">try</span>:
+        snippet = Snippet.objects.get(pk=pk)
+    <span class="hljs-keyword">except</span> Snippet.DoesNotExist:
+        <span class="hljs-keyword">return</span> HttpResponse(status=<span class="hljs-number">404</span>)
+
+    <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&apos;GET&apos;</span>:
+        serializer = SnippetSerializer(snippet)
+        <span class="hljs-keyword">return</span> JsonResponse(serializer.data)
+
+    <span class="hljs-keyword">elif</span> request.method == <span class="hljs-string">&apos;PUT&apos;</span>:
+        data = JSONParser().parse(request)
+        serializer = SnippetSerializer(snippet, data=data)
+        <span class="hljs-keyword">if</span> serializer.is_valid():
+            serializer.save()
+            <span class="hljs-keyword">return</span> JsonResponse(serializer.data)
+        <span class="hljs-keyword">return</span> JsonResponse(serializer.errors, status=<span class="hljs-number">400</span>)
+
+    <span class="hljs-keyword">elif</span> request.method == <span class="hljs-string">&apos;DELETE&apos;</span>:
+        snippet.delete()
+        <span class="hljs-keyword">return</span> HttpResponse(status=<span class="hljs-number">204</span>)
+</code></pre>
+<p>&#x6700;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x628A;&#x8FD9;&#x4E9B;&#x8054;&#x7CFB;&#x8D77;&#x6765;&#x3002;&#x521B;&#x5EFA;<code>snippets/urls.py</code>&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.conf.urls <span class="hljs-keyword">import</span> url
+<span class="hljs-keyword">from</span> snippets <span class="hljs-keyword">import</span> views
+
+urlpatterns = [
+    url(<span class="hljs-string">r&apos;^snippets/$&apos;</span>, views.snippet_list),
+    url(<span class="hljs-string">r&apos;^snippets/(?P&lt;pk&gt;[0-9]+)/$&apos;</span>, views.snippet_detail),
+]
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x8FD8;&#x9700;&#x8981;&#x5728;<code>tutorial/urls.py</code>&#x6587;&#x4EF6;&#x5F15;&#x7528;&#x6211;&#x4EEC;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;URL&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.conf.urls <span class="hljs-keyword">import</span> url, include
+
+urlpatterns = [
+    url(<span class="hljs-string">r&apos;^&apos;</span>, include(<span class="hljs-string">&apos;snippets.urls&apos;</span>)),
+]
+</code></pre>
+<p>&#x503C;&#x5F97;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x6211;&#x4EEC;&#x76EE;&#x524D;&#x8FD8;&#x6CA1;&#x6709;&#x5904;&#x7406;&#x597D;&#x51E0;&#x4E2A;&#x7EC6;&#x8282;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x53D1;&#x9001;&#x7684;&#x662F;&#x7578;&#x5F62;&#x7684;<code>json</code>&#xFF0C;&#x6216;&#x8005;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x4E0D;&#x652F;&#x6301;&#x7684;HTTP&#x8BF7;&#x6C42;&#x65B9;&#x6CD5;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x6700;&#x7EC8;&#x4F1A;&#x6536;&#x5230;500&quot;&#x670D;&#x52A1;&#x5668;&#x9519;&#x8BEF;&quot;&#x54CD;&#x5E94;&#x3002;</p>
+<h2 id="&#x6D4B;&#x8BD5;&#x6211;&#x4EEC;&#x7B2C;&#x4E00;&#x4E2A;web-api">&#x6D4B;&#x8BD5;&#x6211;&#x4EEC;&#x7B2C;&#x4E00;&#x4E2A;Web API</h2>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x542F;&#x52A8;&#x670D;&#x52A1;&#x3002;</p>
+<p>&#x9996;&#x5148;&#x9000;&#x51FA;shell&#xFF1A;</p>
+<pre><code class="lang-python">quit()
+</code></pre>
+<p>&#x5E76;&#x542F;&#x52A8;Django&#x7684;&#x670D;&#x52A1;&#x5668;&#x3002;</p>
+<pre><code class="lang-python">python manage.py runserver
+
+Validating models...
+
+<span class="hljs-number">0</span> errors found
+Django version <span class="hljs-number">1.11</span>, using settings <span class="hljs-string">&apos;tutorial.settings&apos;</span>
+Development server <span class="hljs-keyword">is</span> running at http://<span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.1</span>:<span class="hljs-number">8000</span>/
+Quit the server <span class="hljs-keyword">with</span> CONTROL-C.
+</code></pre>
+<p>&#x5728;&#x53E6;&#x4E00;&#x4E2A;&#x7EC8;&#x7AEF;&#x7A97;&#x53E3;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6D4B;&#x8BD5;&#x670D;&#x52A1;&#x5668;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;curl&#x6216;httpie&#x6765;&#x6D4B;&#x8BD5;&#x6211;&#x4EEC;&#x7684;API &#x3002;Httpie&#x662F;&#x7528;Python&#x7F16;&#x5199;&#x7684;&#x7528;&#x6237;&#x53CB;&#x597D;&#x7684;http&#x5BA2;&#x6237;&#x7AEF;&#x3002;&#x8BA9;&#x6211;&#x4EEC;&#x5148;&#x5B89;&#x88C5;&#x3002;</p>
+<p>&#x60A8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;pip&#x5B89;&#x88C5;httpie&#xFF1A;</p>
+<pre><code class="lang-python">pip install httpie
+</code></pre>
+<p>&#x6700;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x6240;&#x6709;snippets&#x7684;&#x5217;&#x8868;&#xFF1A;</p>
+<pre><code class="lang-python">http http://<span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.1</span>:<span class="hljs-number">8000</span>/snippets/
+
+HTTP/<span class="hljs-number">1.1</span> <span class="hljs-number">200</span> OK
+...
+[
+  {
+    <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">1</span>,
+    <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+    <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-string">&quot;foo = \&quot;bar\&quot;\n&quot;</span>,
+    <span class="hljs-string">&quot;linenos&quot;</span>: false,
+    <span class="hljs-string">&quot;language&quot;</span>: <span class="hljs-string">&quot;python&quot;</span>,
+    <span class="hljs-string">&quot;style&quot;</span>: <span class="hljs-string">&quot;friendly&quot;</span>
+  },
+  {
+    <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">2</span>,
+    <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+    <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-string">&quot;print \&quot;hello, world\&quot;\n&quot;</span>,
+    <span class="hljs-string">&quot;linenos&quot;</span>: false,
+    <span class="hljs-string">&quot;language&quot;</span>: <span class="hljs-string">&quot;python&quot;</span>,
+    <span class="hljs-string">&quot;style&quot;</span>: <span class="hljs-string">&quot;friendly&quot;</span>
+  }
+]
+</code></pre>
+<p>&#x6216;&#x8005;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5F15;&#x7528;snippet&#x7684;id&#x6765;get&#x4E00;&#x4E2A;&#x5BF9;&#x5E94;&#x7684;&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-python">http http://<span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.1</span>:<span class="hljs-number">8000</span>/snippets/<span class="hljs-number">2</span>/
+
+HTTP/<span class="hljs-number">1.1</span> <span class="hljs-number">200</span> OK
+...
+{
+  <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">2</span>,
+  <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+  <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-string">&quot;print \&quot;hello, world\&quot;\n&quot;</span>,
+  <span class="hljs-string">&quot;linenos&quot;</span>: false,
+  <span class="hljs-string">&quot;language&quot;</span>: <span class="hljs-string">&quot;python&quot;</span>,
+  <span class="hljs-string">&quot;style&quot;</span>: <span class="hljs-string">&quot;friendly&quot;</span>
+}
+</code></pre>
+<p>&#x540C;&#x6837;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;Web&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x8BBF;&#x95EE;URL&#x6765;&#x663E;&#x793A;&#x76F8;&#x540C;&#x200B;&#x200B;&#x7684;json&#x3002;</p>
+<h2 id="&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x5728;&#x54EA;">&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x5728;&#x54EA;</h2>
+<p>&#x76EE;&#x524D;&#x4E3A;&#x6B62;&#xFF0C;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x6709;&#x4E86;&#x4E00;&#x4E2A;&#x5E8F;&#x5217;&#x5316;API&#xFF0C;&#x5B83;&#x4E0E;Django&#x7684;Forms API&#x4EE5;&#x53CA;&#x4E00;&#x4E9B;&#x5E38;&#x89C4;&#x7684;Django&#x89C6;&#x56FE;&#x975E;&#x5E38;&#x76F8;&#x4F3C;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x7684;API&#x89C6;&#x56FE;&#x76EE;&#x524D;&#x4E0D;&#x505A;&#x5176;&#x4ED6;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x9664;&#x4E86;&#x670D;&#x52A1;json&#x54CD;&#x5E94;&#x4E4B;&#x5916;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x6211;&#x4EEC;&#x4ECD;&#x7136;&#x5E0C;&#x671B;&#x6E05;&#x7406;&#x7684;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x8FB9;&#x7F18;&#x6848;&#x4F8B;&#xFF0C;&#x4F46;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#x7684;Web API&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5C06;&#x770B;&#x5230;&#x6B64;&#x6559;&#x7A0B;&#x7B2C;2&#x90E8;&#x5206;<code>Requests &amp; Responses</code>&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../quickstart/testing.html" class="navigation navigation-prev " aria-label="Previous page: 测试API">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="req-resp.html" class="navigation navigation-next " aria-label="Next page: Requests & Responses">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"序列化","level":"3.1","depth":1,"next":{"title":"Requests & Responses","level":"3.2","depth":1,"path":"tutorial/req-resp.md","ref":"tutorial/req-resp.md","articles":[]},"previous":{"title":"测试API","level":"2.6","depth":1,"path":"quickstart/testing.md","ref":"quickstart/testing.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","sharing-plus","search-pro","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"search-pro":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","qq","linkedin","qzone","douban"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"nick","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook学习笔记","links":{"sidebar":{"Author's Blog":"http://ibash.cc"}},"gitbook":"*","description":"Django REST framework 3 中文文档"},"file":{"path":"tutorial/serialization.md","mtime":"2018-03-17T17:11:50.486Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-17T17:41:04.421Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

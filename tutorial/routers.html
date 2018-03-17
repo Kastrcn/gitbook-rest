@@ -1,0 +1,1055 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>视图集合和路由 · GitBook学习笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="nick">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="coreapi.html" />
+    
+    
+    <link rel="prev" href="hyperlink.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://ibash.cc" target="_blank" class="custom-link">Author's Blog</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">安装介绍</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../home/install.html">
+            
+                <a href="../home/install.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../home/example.html">
+            
+                <a href="../home/example.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    举例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">快速上手</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../quickstart/project.html">
+            
+                <a href="../quickstart/project.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    创建项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../quickstart/serializers.html">
+            
+                <a href="../quickstart/serializers.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../quickstart/views.html">
+            
+                <a href="../quickstart/views.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../quickstart/urls.html">
+            
+                <a href="../quickstart/urls.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../quickstart/settings.html">
+            
+                <a href="../quickstart/settings.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    Settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../quickstart/testing.html">
+            
+                <a href="../quickstart/testing.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    测试API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">教程</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="serialization.html">
+            
+                <a href="serialization.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="req-resp.html">
+            
+                <a href="req-resp.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    Requests & Responses
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="classview.html">
+            
+                <a href="classview.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    类视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="auth-perms.html">
+            
+                <a href="auth-perms.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    认证和权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="hyperlink.html">
+            
+                <a href="hyperlink.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    关系和超链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.6" data-path="routers.html">
+            
+                <a href="routers.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    视图集合和路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="coreapi.html">
+            
+                <a href="coreapi.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    coreapi
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">API 指南</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../api/requests.html">
+            
+                <a href="../api/requests.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Requests
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../api/responses.html">
+            
+                <a href="../api/responses.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    Responses
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../api/views.html">
+            
+                <a href="../api/views.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    视图Views
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../api/gviews.html">
+            
+                <a href="../api/gviews.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    通用视图Generic views
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../api/viewsets.html">
+            
+                <a href="../api/viewsets.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    视图组Viewsets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../api/routers.html">
+            
+                <a href="../api/routers.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    路由器Routers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../api/parsers.html">
+            
+                <a href="../api/parsers.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    解析器Parsers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../api/renderers.html">
+            
+                <a href="../api/renderers.html">
+            
+                    
+                        <b>4.8.</b>
+                    
+                    渲染器Renderers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="../api/serializers.html">
+            
+                <a href="../api/serializers.html">
+            
+                    
+                        <b>4.9.</b>
+                    
+                    序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="../api/serializersfield.html">
+            
+                <a href="../api/serializersfield.html">
+            
+                    
+                        <b>4.10.</b>
+                    
+                    Serializer fields
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="../api/serializersrelat.html">
+            
+                <a href="../api/serializersrelat.html">
+            
+                    
+                        <b>4.11.</b>
+                    
+                    Serializer relations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="../api/validators.html">
+            
+                <a href="../api/validators.html">
+            
+                    
+                        <b>4.12.</b>
+                    
+                    校验器Validators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" data-path="../api/authentication.html">
+            
+                <a href="../api/authentication.html">
+            
+                    
+                        <b>4.13.</b>
+                    
+                    身份验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.14" data-path="../api/permissions.html">
+            
+                <a href="../api/permissions.html">
+            
+                    
+                        <b>4.14.</b>
+                    
+                    权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.15" data-path="../api/throttling.html">
+            
+                <a href="../api/throttling.html">
+            
+                    
+                        <b>4.15.</b>
+                    
+                    限流Throttling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.16" data-path="../api/filtering.html">
+            
+                <a href="../api/filtering.html">
+            
+                    
+                        <b>4.16.</b>
+                    
+                    过滤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.17" data-path="../api/pagination.html">
+            
+                <a href="../api/pagination.html">
+            
+                    
+                        <b>4.17.</b>
+                    
+                    分页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.18" data-path="../api/versioning.html">
+            
+                <a href="../api/versioning.html">
+            
+                    
+                        <b>4.18.</b>
+                    
+                    API 版本化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.19" data-path="../api/cnegotiation.html">
+            
+                <a href="../api/cnegotiation.html">
+            
+                    
+                        <b>4.19.</b>
+                    
+                    内容协商Content negotiation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.20" data-path="../api/metadata.html">
+            
+                <a href="../api/metadata.html">
+            
+                    
+                        <b>4.20.</b>
+                    
+                    元数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.21" data-path="../api/schemas.html">
+            
+                <a href="../api/schemas.html">
+            
+                    
+                        <b>4.21.</b>
+                    
+                    Schemas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.22" data-path="../api/formatsuffixes.html">
+            
+                <a href="../api/formatsuffixes.html">
+            
+                    
+                        <b>4.22.</b>
+                    
+                    Format suffixes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.23" data-path="../api/urls.html">
+            
+                <a href="../api/urls.html">
+            
+                    
+                        <b>4.23.</b>
+                    
+                    Returning URLs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.24" data-path="../api/exceptions.html">
+            
+                <a href="../api/exceptions.html">
+            
+                    
+                        <b>4.24.</b>
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.25" data-path="../api/statuscodes.html">
+            
+                <a href="../api/statuscodes.html">
+            
+                    
+                        <b>4.25.</b>
+                    
+                    状态码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.26" data-path="../api/testing.html">
+            
+                <a href="../api/testing.html">
+            
+                    
+                        <b>4.26.</b>
+                    
+                    测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.27" data-path="../api/settings.html">
+            
+                <a href="../api/settings.html">
+            
+                    
+                        <b>4.27.</b>
+                    
+                    Settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">最佳实践</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../topics/docs.html">
+            
+                <a href="../topics/docs.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    API文档生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >视图集合和路由</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x89C6;&#x56FE;&#x96C6;&#x5408;&#x548C;&#x8DEF;&#x7531;">&#x89C6;&#x56FE;&#x96C6;&#x5408;&#x548C;&#x8DEF;&#x7531;</h1>
+<p>REST&#x6846;&#x67B6;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x7684;&#x62BD;&#x8C61;&#x6982;&#x5FF5;<code>ViewSets</code>&#xFF0C;&#x5B83;&#x5141;&#x8BB8;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x4E13;&#x6CE8;&#x4E8E;&#x5BF9;API&#x7684;&#x72B6;&#x6001;&#x548C;&#x4EA4;&#x4E92;&#x8FDB;&#x884C;&#x5EFA;&#x6A21;&#xFF0C;&#x5E76;&#x6839;&#x636E;&#x901A;&#x7528;&#x7EA6;&#x5B9A;&#x81EA;&#x52A8;&#x5904;&#x7406;URL&#x6784;&#x9020;&#x3002;</p>
+<p><code>ViewSet</code>&#x7C7B;&#x4E0E;&#x7C7B;&#x51E0;&#x4E4E;&#x76F8;&#x540C;<code>View</code>&#xFF0C;&#x9664;&#x4E86;&#x5B83;&#x4EEC;&#x63D0;&#x4F9B;&#x4F8B;&#x5982;<code>read</code>&#x6216;<code>update</code>&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4F8B;&#x5982;<code>get``` or</code>put``&#x7684;&#x65B9;&#x6CD5;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;<code>&#x89C6;&#x56FE;&#x96C6;&#x5408;</code>&#x7C7B;&#x53EA;&#x5728;&#x6700;&#x540E;&#x65F6;&#x523B;&#x7ED1;&#x5B9A;&#x5230;&#x4E00;&#x7EC4;&#x65B9;&#x6CD5;&#x6765;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#xFF0C;&#x5F53;&#x5B83;&#x88AB;&#x5B9E;&#x4F8B;&#x5316;&#x4E3A;&#x4E00;&#x7EC4;&#x89C6;&#x56FE;&#x65F6;&#xFF0C;&#x901A;&#x5E38;&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;<code>Router</code>&#x7C7B;&#x6765;&#x4E3A;&#x60A8;&#x5904;&#x7406;&#x5B9A;&#x4E49;URL conf&#x7684;&#x590D;&#x6742;&#x6027;&#x3002;</p>
+<h2 id="&#x91CD;&#x6784;&#x89C6;&#x56FE;">&#x91CD;&#x6784;&#x89C6;&#x56FE;</h2>
+<p>&#x6211;&#x4EEC;&#x6765;&#x770B;&#x770B;&#x6211;&#x4EEC;&#x5F53;&#x524D;&#x7684;&#x4E00;&#x7EC4;&#x89C6;&#x56FE;&#xFF0C;&#x5E76;&#x5C06;&#x5B83;&#x4EEC;&#x91CD;&#x6784;&#x4E3A;&#x89C6;&#x56FE;&#x96C6;&#x3002;</p>
+<p>&#x9996;&#x5148;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x5C06;<code>UserList</code>&#x548C;<code>UserDetail</code>&#x89C6;&#x56FE;&#x91CD;&#x6784;&#x4E3A;&#x5355;&#x4E2A;<code>UserViewSet</code>&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5220;&#x9664;&#x8FD9;&#x4E24;&#x4E2A;&#x89C6;&#x56FE;&#xFF0C;&#x5E76;&#x7528;&#x4E00;&#x4E2A;&#x7C7B;&#x66FF;&#x6362;&#x5B83;&#x4EEC;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> rest_framework <span class="hljs-keyword">import</span> viewsets
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserViewSet</span><span class="hljs-params">(viewsets.ReadOnlyModelViewSet)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;
+    &#x8FD9;&#x4E2A;&#x89C6;&#x56FE;&#x96C6;&#x5408;&#x4F1A;&#x81EA;&#x52A8;&#x63D0;&#x4F9B;&#x201C;list&#x201D;&#x548C;&#x201C;detail&#x201D;&#x64CD;&#x4F5C;&#x3002;
+    &quot;&quot;&quot;</span>
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;<code>ReadOnlyModelViewSet</code>&#x7C7B;&#x6765;&#x81EA;&#x52A8;&#x63D0;&#x4F9B;&#x9ED8;&#x8BA4;&#x7684;&#x201C;&#x53EA;&#x8BFB;&#x201D;&#x64CD;&#x4F5C;&#x3002;&#x6211;&#x4EEC;&#x4ECD;&#x7136;&#x50CF;&#x5728;&#x4F7F;&#x7528;&#x5E38;&#x89C4;&#x89C6;&#x56FE;&#x65F6;&#x90A3;&#x6837;&#x8BBE;&#x7F6E;<code>queryset</code>&#x548C;<code>serializer_class</code>&#x5C5E;&#x6027;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x4E0D;&#x518D;&#x9700;&#x8981;&#x5411;&#x4E24;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x7C7B;&#x63D0;&#x4F9B;&#x76F8;&#x540C;&#x7684;&#x4FE1;&#x606F;&#x3002;
+&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x8981;&#x66F4;&#x6362;<code>SnippetList</code>&#xFF0C;<code>SnippetDetail</code>&#x548C;<code>SnippetHighlight</code>&#x89C6;&#x56FE;&#x7C7B;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5220;&#x9664;&#x4E09;&#x4E2A;&#x89C6;&#x56FE;&#xFF0C;&#x5E76;&#x518D;&#x6B21;&#x7528;&#x4E00;&#x4E2A;&#x7C7B;&#x66FF;&#x6362;&#x5B83;&#x4EEC;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> rest_framework.decorators <span class="hljs-keyword">import</span> detail_route
+<span class="hljs-keyword">from</span> rest_framework.response <span class="hljs-keyword">import</span> Response
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SnippetViewSet</span><span class="hljs-params">(viewsets.ModelViewSet)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;
+    &#x8BE5;&#x89C6;&#x56FE;&#x81EA;&#x52A8;&#x63D0;&#x4F9B; `list`, `create`, `retrieve`,
+    `update` and `destroy` actions.
+
+    Additionally we also provide an extra `highlight` action.
+    &quot;&quot;&quot;</span>
+    queryset = Snippet.objects.all()
+    serializer_class = SnippetSerializer
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,
+                          IsOwnerOrReadOnly,)
+
+<span class="hljs-meta">    @detail_route(renderer_classes=[renderers.StaticHTMLRenderer])</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">highlight</span><span class="hljs-params">(self, request, *args, **kwargs)</span>:</span>
+        snippet = self.get_object()
+        <span class="hljs-keyword">return</span> Response(snippet.highlighted)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">perform_create</span><span class="hljs-params">(self, serializer)</span>:</span>
+        serializer.save(owner=self.request.user)
+</code></pre>
+<p>&#x8FD9;&#x6B21;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;<code>ModelViewSet</code>&#x7C7B;&#x6765;&#x83B7;&#x5F97;&#x5B8C;&#x6574;&#x7684;&#x9ED8;&#x8BA4;&#x8BFB;&#x5199;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x4F7F;&#x7528;<code>@detail_route</code>&#x88C5;&#x9970;&#x5668;&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x64CD;&#x4F5C;<code>highlight</code>&#x3002;&#x8FD9;&#x4E2A;&#x88C5;&#x9970;&#x5668;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x6DFB;&#x52A0;&#x4EFB;&#x4F55;&#x4E0D;&#x7B26;&#x5408;&#x6807;&#x51C6;<code>create/ update/ delete</code>&#x98CE;&#x683C;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x7AEF;&#x70B9;&#x3002;</p>
+<p>&#x4F7F;&#x7528;<code>@detail_route</code> &#x88C5;&#x9970;&#x5668;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x64CD;&#x4F5C;&#x5C06;&#x5728;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x54CD;&#x5E94;GET&#x8BF7;&#x6C42;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x4E00;&#x4E2A;&#x54CD;&#x5E94;POST&#x8BF7;&#x6C42;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>methods</code>&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x81EA;&#x5B9A;&#x4E49;&#x64CD;&#x4F5C;&#x7684;URL&#x9ED8;&#x8BA4;&#x53D6;&#x51B3;&#x4E8E;&#x65B9;&#x6CD5;&#x540D;&#x79F0;&#x672C;&#x8EAB;&#x3002;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x6539;&#x53D8;&#x6784;&#x9020;url&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5305;&#x542B;url_path&#x4F5C;&#x4E3A;&#x88C5;&#x9970;&#x5668;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#x3002;</p>
+<h2 id="&#x663E;&#x5F0F;&#x5730;&#x5C06;viewsets&#x7ED1;&#x5B9A;&#x5230;url">&#x663E;&#x5F0F;&#x5730;&#x5C06;ViewSets&#x7ED1;&#x5B9A;&#x5230;URL</h2>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;URLConf&#x65F6;&#xFF0C;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x65B9;&#x6CD5;&#x53EA;&#x7ED1;&#x5B9A;&#x5230;&#x64CD;&#x4F5C;&#x3002;&#x4E3A;&#x4E86;&#x67E5;&#x770B;&#x5F15;&#x64CE;&#x76D6;&#x4E0B;&#x53D1;&#x751F;&#x4E86;&#x4EC0;&#x4E48;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x9996;&#x5148;&#x4ECE;&#x6211;&#x4EEC;&#x7684;&#x89C6;&#x56FE;&#x4E2D;&#x663E;&#x5F0F;&#x5730;&#x521B;&#x5EFA;&#x4E00;&#x7EC4;&#x89C6;&#x56FE;&#x3002;</p>
+<p>&#x5728;<code>snippets/urls.py</code>&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x6211;&#x4EEC;&#x7684;<code>ViewSet</code>&#x7C7B;&#x7ED1;&#x5B9A;&#x5230;&#x4E00;&#x7EC4;&#x5177;&#x4F53;&#x7684;&#x89C6;&#x56FE;&#x4E2D;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> snippets.views <span class="hljs-keyword">import</span> SnippetViewSet, UserViewSet, api_root
+<span class="hljs-keyword">from</span> rest_framework <span class="hljs-keyword">import</span> renderers
+
+snippet_list = SnippetViewSet.as_view({
+    <span class="hljs-string">&apos;get&apos;</span>: <span class="hljs-string">&apos;list&apos;</span>,
+    <span class="hljs-string">&apos;post&apos;</span>: <span class="hljs-string">&apos;create&apos;</span>
+})
+snippet_detail = SnippetViewSet.as_view({
+    <span class="hljs-string">&apos;get&apos;</span>: <span class="hljs-string">&apos;retrieve&apos;</span>,
+    <span class="hljs-string">&apos;put&apos;</span>: <span class="hljs-string">&apos;update&apos;</span>,
+    <span class="hljs-string">&apos;patch&apos;</span>: <span class="hljs-string">&apos;partial_update&apos;</span>,
+    <span class="hljs-string">&apos;delete&apos;</span>: <span class="hljs-string">&apos;destroy&apos;</span>
+})
+snippet_highlight = SnippetViewSet.as_view({
+    <span class="hljs-string">&apos;get&apos;</span>: <span class="hljs-string">&apos;highlight&apos;</span>
+}, renderer_classes=[renderers.StaticHTMLRenderer])
+user_list = UserViewSet.as_view({
+    <span class="hljs-string">&apos;get&apos;</span>: <span class="hljs-string">&apos;list&apos;</span>
+})
+user_detail = UserViewSet.as_view({
+    <span class="hljs-string">&apos;get&apos;</span>: <span class="hljs-string">&apos;retrieve&apos;</span>
+})
+</code></pre>
+<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x6211;&#x4EEC;&#x662F;&#x5982;&#x4F55;&#x4ECE;&#x6BCF;&#x4E2A;<code>ViewSet</code>&#x7C7B;&#x521B;&#x5EFA;&#x591A;&#x4E2A;&#x89C6;&#x56FE;&#xFF0C;&#x65B9;&#x6CD5;&#x662F;&#x5C06;http&#x65B9;&#x6CD5;&#x7ED1;&#x5B9A;&#x5230;&#x6BCF;&#x4E2A;&#x89C6;&#x56FE;&#x6240;&#x9700;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x5C06;&#x8D44;&#x6E90;&#x7ED1;&#x5B9A;&#x5230;&#x5177;&#x4F53;&#x7684;&#x89C6;&#x56FE;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x50CF;&#x5F80;&#x5E38;&#x4E00;&#x6837;&#x4ECE;<code>URL conf</code>&#x6CE8;&#x518C;&#x89C6;&#x56FE;&#x3002;</p>
+<pre><code class="lang-python">urlpatterns = format_suffix_patterns([
+    url(<span class="hljs-string">r&apos;^$&apos;</span>, api_root),
+    url(<span class="hljs-string">r&apos;^snippets/$&apos;</span>, snippet_list, name=<span class="hljs-string">&apos;snippet-list&apos;</span>),
+    url(<span class="hljs-string">r&apos;^snippets/(?P&lt;pk&gt;[0-9]+)/$&apos;</span>, snippet_detail, name=<span class="hljs-string">&apos;snippet-detail&apos;</span>),
+    url(<span class="hljs-string">r&apos;^snippets/(?P&lt;pk&gt;[0-9]+)/highlight/$&apos;</span>, snippet_highlight, name=<span class="hljs-string">&apos;snippet-highlight&apos;</span>),
+    url(<span class="hljs-string">r&apos;^users/$&apos;</span>, user_list, name=<span class="hljs-string">&apos;user-list&apos;</span>),
+    url(<span class="hljs-string">r&apos;^users/(?P&lt;pk&gt;[0-9]+)/$&apos;</span>, user_detail, name=<span class="hljs-string">&apos;user-detail&apos;</span>)
+])
+</code></pre>
+<h2 id="&#x4F7F;&#x7528;&#x8DEF;&#x7531;&#x5668;">&#x4F7F;&#x7528;&#x8DEF;&#x7531;&#x5668;</h2>
+<p>&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x7684;&#x662F;<code>ViewSet</code>&#x7C7B;&#x800C;&#x4E0D;&#x662F;<code>View</code>&#x7C7B;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x5B9E;&#x9645;&#x4E0A;&#x4E0D;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x8BBE;&#x8BA1;URL&#x3002;&#x5C06;&#x8D44;&#x6E90;&#x8FDE;&#x63A5;&#x5230;&#x89C6;&#x56FE;&#x548C;URL&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>Router</code>&#x7C7B;&#x81EA;&#x52A8;&#x5904;&#x7406;&#x3002;&#x6211;&#x4EEC;&#x6240;&#x9700;&#x8981;&#x505A;&#x7684;&#x5C31;&#x662F;&#x7528;&#x8DEF;&#x7531;&#x5668;&#x6CE8;&#x518C;&#x9002;&#x5F53;&#x7684;&#x89C6;&#x56FE;&#x96C6;&#xFF0C;&#x7136;&#x540E;&#x8BA9;&#x5176;&#x5B8C;&#x6210;&#x3002;</p>
+<p>&#x8FD9;&#x662F;&#x6211;&#x4EEC;&#x91CD;&#x65B0;&#x8FDE;&#x63A5;&#x7684;<code>snippets/urls.py</code>&#x6587;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.conf.urls <span class="hljs-keyword">import</span> url, include
+<span class="hljs-keyword">from</span> rest_framework.routers <span class="hljs-keyword">import</span> DefaultRouter
+<span class="hljs-keyword">from</span> snippets <span class="hljs-keyword">import</span> views
+
+<span class="hljs-comment"># Create a router and register our viewsets with it.</span>
+router = DefaultRouter()
+router.register(<span class="hljs-string">r&apos;snippets&apos;</span>, views.SnippetViewSet)
+router.register(<span class="hljs-string">r&apos;users&apos;</span>, views.UserViewSet)
+
+<span class="hljs-comment"># The API URLs are now determined automatically by the router.</span>
+urlpatterns = [
+    url(<span class="hljs-string">r&apos;^&apos;</span>, include(router.urls))
+]
+</code></pre>
+<p>&#x5411;&#x8DEF;&#x7531;&#x5668;&#x6CE8;&#x518C;&#x89C6;&#x56FE;&#x7C7B;&#x4F3C;&#x4E8E;&#x63D0;&#x4F9B;urlpattern&#x3002;&#x6211;&#x4EEC;&#x5305;&#x542B;&#x4E24;&#x4E2A;&#x53C2;&#x6570; - &#x89C6;&#x56FE;&#x7684;URL&#x524D;&#x7F00;&#x548C;&#x89C6;&#x56FE;&#x672C;&#x8EAB;&#x3002;</p>
+<p><code>DefaultRouter</code>&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x7684;&#x7C7B;&#x4E5F;&#x4E3A;&#x6211;&#x4EEC;&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#x4E86;API&#x6839;&#x89C6;&#x56FE;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x53EF;&#x4EE5;<code>api_root</code>&#x4ECE;<code>views</code>&#x6A21;&#x5757;&#x4E2D;&#x5220;&#x9664;&#x8BE5;&#x65B9;&#x6CD5;&#x3002;</p>
+<h2 id="&#x89C6;&#x56FE;&#x4E0E;&#x89C6;&#x56FE;&#x96C6;&#x4E4B;&#x95F4;&#x7684;&#x6743;&#x8861;">&#x89C6;&#x56FE;&#x4E0E;&#x89C6;&#x56FE;&#x96C6;&#x4E4B;&#x95F4;&#x7684;&#x6743;&#x8861;</h2>
+<p>&#x4F7F;&#x7528;viewsets&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x6709;&#x7528;&#x7684;&#x62BD;&#x8C61;&#x3002;&#x5B83;&#x6709;&#x52A9;&#x4E8E;&#x786E;&#x4FDD;URL&#x7EA6;&#x5B9A;&#x5728;&#x60A8;&#x7684;API&#x4E2D;&#x662F;&#x4E00;&#x81F4;&#x7684;&#xFF0C;&#x6700;&#x5C0F;&#x5316;&#x60A8;&#x9700;&#x8981;&#x7F16;&#x5199;&#x7684;&#x4EE3;&#x7801;&#x91CF;&#xFF0C;&#x5E76;&#x5141;&#x8BB8;&#x60A8;&#x96C6;&#x4E2D;&#x7CBE;&#x529B;&#x4E8E;API&#x63D0;&#x4F9B;&#x7684;&#x4EA4;&#x4E92;&#x548C;&#x8868;&#x793A;&#xFF0C;&#x800C;&#x4E0D;&#x662F;URL conf&#x7684;&#x7EC6;&#x8282;&#x3002;</p>
+<p>&#x8FD9;&#x5E76;&#x4E0D;&#x610F;&#x5473;&#x7740;&#x5B83;&#x603B;&#x662F;&#x6B63;&#x786E;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x5728;&#x4F7F;&#x7528;&#x57FA;&#x4E8E;&#x7C7B;&#x7684;&#x89C6;&#x56FE;&#x800C;&#x4E0D;&#x662F;&#x57FA;&#x4E8E;&#x529F;&#x80FD;&#x7684;&#x89C6;&#x56FE;&#x65F6;&#xFF0C;&#x6709;&#x4E00;&#x7EC4;&#x7C7B;&#x4F3C;&#x7684;&#x6298;&#x8877;&#x65B9;&#x6848;&#x3002;&#x4F7F;&#x7528;viewset&#x6BD4;&#x5355;&#x72EC;&#x6784;&#x5EFA;&#x89C6;&#x56FE;&#x66F4;&#x4E0D;&#x660E;&#x786E;&#x3002;</p>
+<p>&#x5728;&#x672C;&#x6559;&#x7A0B;&#x7684;&#x7B2C;7&#x90E8;&#x5206;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x6DFB;&#x52A0;API&#x6A21;&#x5F0F;&#xFF0C;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x5BA2;&#x6237;&#x7AEF;&#x5E93;&#x6216;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#x4E0E;&#x6211;&#x4EEC;&#x7684;API&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="hyperlink.html" class="navigation navigation-prev " aria-label="Previous page: 关系和超链接">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="coreapi.html" class="navigation navigation-next " aria-label="Next page: coreapi">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"视图集合和路由","level":"3.6","depth":1,"next":{"title":"coreapi","level":"3.7","depth":1,"path":"tutorial/coreapi.md","ref":"tutorial/coreapi.md","articles":[]},"previous":{"title":"关系和超链接","level":"3.5","depth":1,"path":"tutorial/hyperlink.md","ref":"tutorial/hyperlink.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","sharing-plus","search-pro","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"search-pro":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","qq","linkedin","qzone","douban"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"nick","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook学习笔记","links":{"sidebar":{"Author's Blog":"http://ibash.cc"}},"gitbook":"*","description":"Django REST framework 3 中文文档"},"file":{"path":"tutorial/routers.md","mtime":"2018-03-17T17:11:50.485Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-17T17:41:04.421Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

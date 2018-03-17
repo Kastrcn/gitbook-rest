@@ -1,0 +1,1105 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>视图Views · GitBook学习笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="nick">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="gviews.html" />
+    
+    
+    <link rel="prev" href="responses.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://ibash.cc" target="_blank" class="custom-link">Author's Blog</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">安装介绍</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../home/install.html">
+            
+                <a href="../home/install.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../home/example.html">
+            
+                <a href="../home/example.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    举例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">快速上手</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../quickstart/project.html">
+            
+                <a href="../quickstart/project.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    创建项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../quickstart/serializers.html">
+            
+                <a href="../quickstart/serializers.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../quickstart/views.html">
+            
+                <a href="../quickstart/views.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../quickstart/urls.html">
+            
+                <a href="../quickstart/urls.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../quickstart/settings.html">
+            
+                <a href="../quickstart/settings.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    Settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../quickstart/testing.html">
+            
+                <a href="../quickstart/testing.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    测试API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">教程</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../tutorial/serialization.html">
+            
+                <a href="../tutorial/serialization.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../tutorial/req-resp.html">
+            
+                <a href="../tutorial/req-resp.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    Requests & Responses
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../tutorial/classview.html">
+            
+                <a href="../tutorial/classview.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    类视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../tutorial/auth-perms.html">
+            
+                <a href="../tutorial/auth-perms.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    认证和权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../tutorial/hyperlink.html">
+            
+                <a href="../tutorial/hyperlink.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    关系和超链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../tutorial/routers.html">
+            
+                <a href="../tutorial/routers.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    视图集合和路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../tutorial/coreapi.html">
+            
+                <a href="../tutorial/coreapi.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    coreapi
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">API 指南</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="requests.html">
+            
+                <a href="requests.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Requests
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="responses.html">
+            
+                <a href="responses.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    Responses
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.3" data-path="views.html">
+            
+                <a href="views.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    视图Views
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="gviews.html">
+            
+                <a href="gviews.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    通用视图Generic views
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="viewsets.html">
+            
+                <a href="viewsets.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    视图组Viewsets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="routers.html">
+            
+                <a href="routers.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    路由器Routers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="parsers.html">
+            
+                <a href="parsers.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    解析器Parsers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="renderers.html">
+            
+                <a href="renderers.html">
+            
+                    
+                        <b>4.8.</b>
+                    
+                    渲染器Renderers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="serializers.html">
+            
+                <a href="serializers.html">
+            
+                    
+                        <b>4.9.</b>
+                    
+                    序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="serializersfield.html">
+            
+                <a href="serializersfield.html">
+            
+                    
+                        <b>4.10.</b>
+                    
+                    Serializer fields
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="serializersrelat.html">
+            
+                <a href="serializersrelat.html">
+            
+                    
+                        <b>4.11.</b>
+                    
+                    Serializer relations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="validators.html">
+            
+                <a href="validators.html">
+            
+                    
+                        <b>4.12.</b>
+                    
+                    校验器Validators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" data-path="authentication.html">
+            
+                <a href="authentication.html">
+            
+                    
+                        <b>4.13.</b>
+                    
+                    身份验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.14" data-path="permissions.html">
+            
+                <a href="permissions.html">
+            
+                    
+                        <b>4.14.</b>
+                    
+                    权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.15" data-path="throttling.html">
+            
+                <a href="throttling.html">
+            
+                    
+                        <b>4.15.</b>
+                    
+                    限流Throttling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.16" data-path="filtering.html">
+            
+                <a href="filtering.html">
+            
+                    
+                        <b>4.16.</b>
+                    
+                    过滤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.17" data-path="pagination.html">
+            
+                <a href="pagination.html">
+            
+                    
+                        <b>4.17.</b>
+                    
+                    分页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.18" data-path="versioning.html">
+            
+                <a href="versioning.html">
+            
+                    
+                        <b>4.18.</b>
+                    
+                    API 版本化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.19" data-path="cnegotiation.html">
+            
+                <a href="cnegotiation.html">
+            
+                    
+                        <b>4.19.</b>
+                    
+                    内容协商Content negotiation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.20" data-path="metadata.html">
+            
+                <a href="metadata.html">
+            
+                    
+                        <b>4.20.</b>
+                    
+                    元数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.21" data-path="schemas.html">
+            
+                <a href="schemas.html">
+            
+                    
+                        <b>4.21.</b>
+                    
+                    Schemas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.22" data-path="formatsuffixes.html">
+            
+                <a href="formatsuffixes.html">
+            
+                    
+                        <b>4.22.</b>
+                    
+                    Format suffixes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.23" data-path="urls.html">
+            
+                <a href="urls.html">
+            
+                    
+                        <b>4.23.</b>
+                    
+                    Returning URLs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.24" data-path="exceptions.html">
+            
+                <a href="exceptions.html">
+            
+                    
+                        <b>4.24.</b>
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.25" data-path="statuscodes.html">
+            
+                <a href="statuscodes.html">
+            
+                    
+                        <b>4.25.</b>
+                    
+                    状态码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.26" data-path="testing.html">
+            
+                <a href="testing.html">
+            
+                    
+                        <b>4.26.</b>
+                    
+                    测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.27" data-path="settings.html">
+            
+                <a href="settings.html">
+            
+                    
+                        <b>4.27.</b>
+                    
+                    Settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">最佳实践</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../topics/docs.html">
+            
+                <a href="../topics/docs.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    API文档生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >视图Views</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x89C6;&#x56FE;views">&#x89C6;&#x56FE;<code>Views</code></h2>
+<h3 id="&#x57FA;&#x4E8E;&#x7C7B;&#x7684;&#x89C6;&#x56FE;">&#x57FA;&#x4E8E;&#x7C7B;&#x7684;&#x89C6;&#x56FE;</h3>
+<blockquote>
+<p>Django&#x7684;&#x57FA;&#x4E8E;&#x7C7B;&#x7684;&#x89C6;&#x56FE;&#x548C;&#x8001;&#x5F0F;&#x89C6;&#x56FE;&#x76F8;&#x6BD4;&#x662F;&#x66F4;&#x53D7;&#x6B22;&#x8FCE;&#x7684;&#x3002;<br>&#x2014;&#x2014;Reinout van Rees</p>
+</blockquote>
+<p>REST framework&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;<code>APIView</code>&#x7C7B;&#xFF0C;&#x662F;Django&#x7684;<code>View</code>&#x7C7B;&#x7684;&#x5B50;&#x7C7B;&#x3002;</p>
+<p>&#x76F8;&#x6BD4;&#x4E8E;&#x5E38;&#x89C4;&#x7684;<code>View</code>&#x7C7B;&#xFF0C;REST framework&#x7684;<code>APIView</code>&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x70B9;&#x4E0D;&#x540C;&#xFF1A;</p>
+<ul>
+<li>&#x4F20;&#x9012;&#x7ED9;&#x5904;&#x7406;&#x65B9;&#x6CD5;&#x7684;&#x8BF7;&#x6C42;&#x662F;REST framework&#x7684;<code>Request</code>&#x5B9E;&#x4F8B;&#xFF0C;&#x800C;&#x4E0D;&#x662F;Django&#x7684;<code>HttpRequest</code>&#x5B9E;&#x4F8B;&#x3002;</li>
+<li>&#x5904;&#x7406;&#x65B9;&#x6CD5;&#x53EF;&#x80FD;&#x8FD4;&#x56DE;REST framework&#x7684;<code>Response</code>&#x6765;&#x4EE3;&#x66FF;Django&#x7684;<code>HttpResponse</code>&#x3002;&#x8BE5;&#x89C6;&#x56FE;&#x5C06;&#x4F1A;&#x7BA1;&#x7406;&#x5185;&#x5BB9;&#x534F;&#x5546;&#x5E76;&#x7ED9;&#x54CD;&#x5E94;&#x8BBE;&#x7F6E;&#x6B63;&#x786E;&#x7684;&#x6E32;&#x67D3;&#x5668;&#x3002;</li>
+<li>&#x4EFB;&#x4F55;&#x5F02;&#x5E38;&#x5C06;&#x4F1A;&#x88AB;<code>APIException</code>&#x6355;&#x6349;&#xFF0C;&#x5E76;&#x4E14;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5408;&#x9002;&#x7684;&#x54CD;&#x5E94;&#x3002;(&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x5408;&#x9002;&#x7684;&#x9519;&#x8BEF;&#x63D0;&#x793A;)</li>
+<li>&#x4EFB;&#x4F55;&#x8FDB;&#x5165;&#x7684;&#x8BF7;&#x6C42;&#xFF0C;&#x5728;&#x6D3E;&#x5206;&#x5230;&#x5904;&#x7406;&#x51FD;&#x6570;&#x4E4B;&#x524D;&#xFF0C;&#x90FD;&#x5C06;&#x662F;&#x5DF2;&#x7ECF;&#x8BA4;&#x8BC1;&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x6709;&#x9002;&#x5F53;&#x7684;&#x6743;&#x9650;&#xFF0C;&#x6216;&#x8005;&#x8FD8;&#x4F1A;&#x6709;&#x8282;&#x6D41;&#x7684;&#x68C0;&#x67E5;&#x3002;</li>
+</ul>
+<p>&#x4F7F;&#x7528;<code>APIView</code>&#x7C7B;&#x57FA;&#x672C;&#x4E0A;&#x8DDF;&#x4F7F;&#x7528;&#x5E38;&#x89C4;&#x7684;<code>View</code>&#x662F;&#x57FA;&#x672C;&#x4E00;&#x6837;&#x7684;&#x3002;&#x50CF;&#x5F80;&#x5E38;&#x4E00;&#x6837;&#xFF0C;&#x8FDB;&#x6765;&#x7684;&#x8BF7;&#x6C42;&#x4F1A;&#x88AB;&#x5206;&#x6D3E;&#x5230;&#x9002;&#x5F53;&#x7684;&#x5904;&#x7406;&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x6BD4;&#x5982;<code>.get()</code>&#x6216;&#x8005;&#x662F;<code>.post()</code>&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x5927;&#x91CF;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x7528;&#x6765;&#x63A7;&#x5236;API&#x7B56;&#x7565;&#x7684;&#x65B9;&#x65B9;&#x9762;&#x9762;&#x3002;</p>
+<pre><code>from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import authentication, permissions
+from django.contrib.auth.models import User
+
+class ListUsers(APIView):
+    &quot;&quot;&quot;
+    &#x5217;&#x51FA;&#x7CFB;&#x7EDF;&#x4E2D;&#x6240;&#x6709;&#x7684;&#x7528;&#x6237;.
+
+    * &#x9700;&#x8981;&#x8FDB;&#x884C;Token&#x9A8C;&#x8BC1;.
+    * &#x4EC5;&#x4EC5;&#x53EA;&#x6709;&#x7BA1;&#x7406;&#x624D;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x8FD9;&#x4E2A;&#x89C6;&#x56FE;.
+    &quot;&quot;&quot;
+    authentication_classes = (authentication.TokenAuthentication,)
+    permission_classes = (permissions.IsAdminUser,)
+
+    def get(self, request, format=None):
+        &quot;&quot;&quot;
+        Return a list of all users.
+        &quot;&quot;&quot;
+        usernames = [user.username for user in User.objects.all()]
+        return Response(usernames)
+</code></pre><hr>
+<p><strong>&#x6CE8;&#x610F;:</strong> &#x521A;&#x5F00;&#x59CB;&#x53EF;&#x80FD;&#x4F1A;&#x89C9;&#x5F97;Django REST Framework&#x7684;<code>APIView</code>&#x548C;<code>GenericAPIView</code>&#x548C;&#x5404;&#x79CD;&#x5404;&#x6837;&#x7684;<code>Mixins</code>&#x548C;<code>Viewsets</code>&#x6709;&#x975E;&#x5E38;&#x591A;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5C5E;&#x6027;&#x548C;&#x5173;&#x7CFB;&#x3002;&#x8FD9;&#x91CC;&#x6709;&#x4E00;&#x4E2A;&#x5728;&#x7EBF;&#x7684;&#x5730;&#x5740;&#xFF0C;<a href="http://www.cdrf.co/" target="_blank">Classy Django REST Framework</a>&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x6D4F;&#x89C8;&#x7684;&#x8D44;&#x6E90;&#xFF0C;&#x5305;&#x542B;&#x5B8C;&#x6574;&#x7684;&#x65B9;&#x6CD5;&#x548C;&#x5C5E;&#x6027;&#xFF0C;&#x5BF9;&#x4E8E;Django REST Framework&#x7684;&#x57FA;&#x4E8E;&#x7C7B;&#x7684;&#x89C6;&#x56FE;&#x3002;</p>
+<hr>
+<h4 id="api&#x7B56;&#x7565;-&#x5C5E;&#x6027;">API&#x7B56;&#x7565; &#x5C5E;&#x6027;</h4>
+<p>&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;&#x7528;&#x4E8E;&#x63A7;&#x5236;API&#x89C6;&#x56FE;&#x7684;&#x65B9;&#x65B9;&#x9762;&#x9762;, &#x8FD9;&#x4E9B;&#x5C5E;&#x6027;&#x90FD;&#x662F;&#x53EF;&#x63D2;&#x62D4;&#x7684;&#x3002;</p>
+<h5 id="rendererclasses"><code>.renderer_classes</code></h5>
+<h5 id="parserclasses"><code>.parser_classes</code></h5>
+<h5 id="authemticationclasses"><code>.authemtication_classes</code></h5>
+<h5 id="throttleclasses"><code>.throttle_classes</code></h5>
+<h5 id="permissionclasses"><code>.permission_classes</code></h5>
+<h5 id="contentnegotiationclass"><code>.content_negotiation_class</code></h5>
+<h4 id="api&#x7B56;&#x7565;-&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;">API&#x7B56;&#x7565; &#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;</h4>
+<p>REST framework &#x4F1A;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x65B9;&#x6CD5; &#x53BB;&#x5B9E;&#x4F8B;&#x5316; &#x5404;&#x79CD;&#x53EF;&#x63D2;&#x62D4;&#x7684; API &#x7B56;&#x7565;&#x3002; &#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4F60;&#x4E0D;&#x9700;&#x8981;&#x91CD;&#x5199;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x3002;</p>
+<h5 id="getrenderersself"><code>.get_renderers(self)</code></h5>
+<h5 id="getparsersself"><code>.get_parsers(self)</code></h5>
+<h5 id="getauthenticatorsself"><code>.get_authenticators(self)</code></h5>
+<h5 id="getthrottlesself"><code>.get_throttles(self)</code></h5>
+<h5 id="getpermissionsself"><code>.get_permissions(self)</code></h5>
+<h5 id="getcontentnegotiatorself"><code>.get_content_negotiator(self)</code></h5>
+<h5 id="getexceptionhandlerself"><code>.get_exception_handler(self)</code></h5>
+<h4 id="api&#x7B56;&#x7565;-&#x5B9E;&#x65BD;&#x65B9;&#x6CD5;">API&#x7B56;&#x7565; &#x5B9E;&#x65BD;&#x65B9;&#x6CD5;</h4>
+<p>&#x5728;REST framework &#x628A;&#x8BF7;&#x6C42;&#x5206;&#x53D1;&#x5230;&#x76F8;&#x5E94;&#x7684;&#x5904;&#x7406;&#x51FD;&#x6570;&#x4E4B;&#x524D;&#xFF0C;&#x4F1A;&#x8C03;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<h5 id="checkpermissionsself-request"><code>.check_permissions(self, request)</code></h5>
+<h5 id="checkthrottlesself-request"><code>.check_throttles(self, request)</code></h5>
+<h5 id="performcontentnegotiationself-request-forcefalse"><code>.perform_content_negotiation(self, request, force=False)</code></h5>
+<h4 id="dispatch-&#x5206;&#x6D3E;&#x65B9;&#x6CD5;">Dispatch &#x5206;&#x6D3E;&#x65B9;&#x6CD5;</h4>
+<p>&#x4E0B;&#x9762;&#x7684;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x4F1A;&#x76F4;&#x63A5;&#x88AB;&#x89C6;&#x56FE;&#x7684;<code>.dispatch()</code>&#x65B9;&#x6CD5;&#x6765;&#x8C03;&#x7528;&#x3002;&#x5728;&#x8C03;&#x7528;&#x5904;&#x7406;&#x51FD;&#x6570;(&#x6BD4;&#x5982; <code>.get()</code>, <code>.post()</code>, <code>.put()</code>, <code>.patch()</code>)&#x4E4B;&#x524D;&#x6216;&#x8005;&#x4E4B;&#x540E;&#x6267;&#x884C;&#x4E00;&#x4E9B;&#x52A8;&#x4F5C;&#x3002;</p>
+<h5 id="initialself-request-args-kwargs"><code>.initial(self, request, *args, **kwargs)</code></h5>
+<p>&#x4E0D;&#x7BA1;&#x6267;&#x884C;&#x4EFB;&#x4F55;&#x52A8;&#x4F5C;&#x7684;&#x5904;&#x7406;&#x51FD;&#x6570;&#x4E4B;&#x524D;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x90FD;&#x4F1A;&#x88AB;&#x9996;&#x5148;&#x8C03;&#x7528;&#x3002;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x7528;&#x6765;&#x6267;&#x884C;&#x6743;&#x9650;&#x548C;&#x9650;&#x6D41;&#x529F;&#x80FD;&#xFF0C;&#x5E76;&#x4E14;&#x52C7;&#x4E8E;&#x5904;&#x7406;&#x5185;&#x5BB9;&#x534F;&#x5546;&#x3002;</p>
+<p>&#x4F60;&#x901A;&#x5E38;&#x4E0D;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;</p>
+<h5 id="handleexceptionself-exc"><code>.handle_exception(self, exc)</code></h5>
+<p>&#x6267;&#x884C;&#x5904;&#x7406;&#x51FD;&#x6570;&#x4E2D;&#x629B;&#x51FA;&#x7684;&#x4EFB;&#x4F55;&#x5F02;&#x5E38;&#x90FD;&#x4F1A;&#x88AB;&#x4F20;&#x9012;&#x5230;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x5C06;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>Response</code>&#x5B9E;&#x4F8B;&#xFF0C;&#x6216;&#x8005;&#x91CD;&#x65B0;<code>raise</code>&#x4E00;&#x4E2A;&#x5F02;&#x5E38;&#x3002;</p>
+<p>&#x9ED8;&#x8BA4;&#x5904;&#x7406;&#x5F02;&#x5E38;&#x7684;&#x884C;&#x4E3A;&#x53EF;&#x4EE5;&#x662F;&#x4EFB;&#x4F55;<code>rest_framework.exceptions.APIException</code>&#x7684;&#x5B50;&#x7C7B;&#xFF0C;&#x548C;Django&#x7684;<code>Http404</code>&#x548C;<code>PermissionDenied</code>&#x5F02;&#x5E38;&#x4E00;&#x6837;&#xFF0C; &#x90FD;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5408;&#x7406;&#x6070;&#x5F53;&#x7684;&#x9519;&#x8BEF;&#x54CD;&#x5E94;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x9700;&#x8981;&#x5728;&#x4F60;&#x7684;API&#x4E2D;&#x81EA;&#x5B9A;&#x4E49;&#x9519;&#x8BEF;&#x54CD;&#x5E94;&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x5728;&#x4F60;&#x7EE7;&#x627F;&#x7684;&#x5B50;&#x7C7B;&#x4E2D;&#x91CD;&#x5199;&#x8BE5;&#x65B9;&#x6CD5;&#x3002;</p>
+<h5 id="initializerequestself-request-args-kwargs"><code>.initialize_request(self, request, *args, **kwargs)</code></h5>
+<p>&#x521D;&#x59CB;&#x5316;&#x8BF7;&#x6C42;&#x3002;</p>
+<p>&#x786E;&#x4FDD;&#x4F20;&#x9012;&#x7ED9;&#x5904;&#x7406;&#x65B9;&#x6CD5;&#x7684;&#x8BF7;&#x6C42;&#x5BF9;&#x8C61;&#x662F;<code>Request</code>&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5E38;&#x89C4;&#x7684;Django&#x7684;<code>HttpRequest</code>&#x3002;</p>
+<p>&#x8BE5;&#x65B9;&#x6CD5;&#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x662F;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>Request</code>&#x7684;&#x5B9E;&#x4F8B;&#x3002;</p>
+<p>&#x4F60;&#x901A;&#x5E38;&#x4E0D;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;</p>
+<h5 id="finalizeresponseself-request-response-args-kwargs"><code>.finalize_response(self, request, response, *args, **kwargs)</code></h5>
+<p>&#x8FD4;&#x56DE;&#x6700;&#x7EC8;&#x7684;&#x54CD;&#x5E94;&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x8BE5;&#x65B9;&#x6CD5;&#x4F1A;&#x5728;&#x6700;&#x540E;&#x8C03;&#x7528;&#xFF0C;&#x786E;&#x4FDD;&#x5904;&#x7406;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x7684;&#x4EFB;&#x4F55;<code>Response</code>&#x5BF9;&#x8C61;&#x4F1A;&#x88AB;&#x6B63;&#x786E;&#x7684;&#x6E32;&#x67D3;&#x3002;</p>
+<p>&#x8BE5;&#x65B9;&#x6CD5;&#x4F1A;&#x901A;&#x8FC7;&#x5185;&#x5BB9;&#x534F;&#x5546;(<code>self.perform_content_negotiation(request, force=True)</code>)&#xFF0C;&#x786E;&#x5B9A;<code>response.accepted_renderer</code>&#x548C;<code>response.accepted_media_type</code>&#x3002;</p>
+<p>&#x4F60;&#x901A;&#x5E38;&#x4E5F;&#x4E0D;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;</p>
+<hr>
+<h3 id="&#x57FA;&#x4E8E;&#x51FD;&#x6570;&#x7684;&#x89C6;&#x56FE;">&#x57FA;&#x4E8E;&#x51FD;&#x6570;&#x7684;&#x89C6;&#x56FE;</h3>
+<blockquote>
+<p>&#x57FA;&#x4E8E;&#x7C7B;&#x7684;&#x89C6;&#x56FE;&#x662F;&#x4E00;&#x4E2A;&#x4F18;&#x8D8A;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x8BEF;&#x89E3;&#x3002;
+&#x2014;&#x2014;Nick Coghlan</p>
+</blockquote>
+<p>REST framework&#x5BF9;&#x4E8E;&#x57FA;&#x4E8E;&#x51FD;&#x6570;&#x7684;&#x89C6;&#x56FE;&#x540C;&#x6837;&#x4E5F;&#x80FD;&#x975E;&#x5E38;&#x597D;&#x7684;&#x5DE5;&#x4F5C;&#x3002;REST framework&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x7EC4;&#x7B80;&#x5355;&#x7684;&#x88C5;&#x9970;&#x5668;&#xFF0C;&#x7528;&#x6765;&#x5305;&#x88C5;&#x4F60;&#x7684;&#x57FA;&#x4E8E;&#x51FD;&#x6570;&#x7684;&#x89C6;&#x56FE;&#xFF1B;&#x6765;&#x4FDD;&#x8BC1;&#x4F60;&#x7684;&#x89C6;&#x56FE;&#x63A5;&#x6536;&#x5230;&#x7684;&#x8BF7;&#x6C42;&#x662F;<code>Request</code>&#x7684;&#x5B9E;&#x4F8B;(&#x800C;&#x4E0D;&#x662F;Django&#x7684;HttPRequest)&#xFF0C;&#x5E76;&#x4E14;&#x8FD4;&#x56DE;&#x7684;&#x54CD;&#x5E94;&#x662F;<code>Response</code>&#x7684;&#x5B9E;&#x4F8B;(&#x800C;&#x4E0D;&#x662F;Django&#x7684;HttpResponse)&#xFF0C;&#x5E76;&#x4E14;&#x5141;&#x8BB8;&#x60A8;&#x914D;&#x7F6E;&#x5982;&#x4F55;&#x5904;&#x7406;&#x8BF7;&#x6C42;&#x3002;</p>
+<h4 id="apiview"><code>@api_view()</code></h4>
+<p><strong>&#x8BED;&#x6CD5;&#xFF1A;</strong> <code>@api_view(http_method_names=[&apos;GET&apos;])</code></p>
+<p>&#x6838;&#x5FC3;&#x529F;&#x80FD;&#x5C31;&#x662F;<code>@api_view</code>&#x88C5;&#x9970;&#x5668;&#xFF0C;&#x5E76;&#x4E14;&#x8981;&#x628A;&#x4F60;&#x89C6;&#x56FE;&#x5E94;&#x8BE5;&#x63A5;&#x6536;&#x5904;&#x7406;&#x7684;HTTP&#x65B9;&#x6CD5;&#x4EE5;&#x5217;&#x8868;&#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x5199;&#x5230;&#x88C5;&#x9970;&#x5668;&#x7684;&#x53C2;&#x6570;&#x4E2D;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#xFF0C;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x662F;&#x5982;&#x4F55;&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x7684;&#x89C6;&#x56FE;&#xFF0C;&#x5E76;&#x4E14;&#x4EC5;&#x4EC5;&#x662F;&#x624B;&#x52A8;&#x8FD4;&#x56DE;&#x4E00;&#x4E9B;&#x6570;&#x636E;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> rest_framework.decorators <span class="hljs-keyword">import</span> api_view
+
+<span class="hljs-meta">@api_view()</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hello_world</span><span class="hljs-params">(request)</span>:</span>
+    <span class="hljs-keyword">return</span> Response({<span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;Hello, world!&quot;</span>})
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x89C6;&#x56FE;&#x5C06;&#x4F7F;&#x7528;<a href="settings.html"><code>settings</code></a>&#x4E2D;&#x6307;&#x5B9A;&#x7684;&#x9ED8;&#x8BA4;&#x7684;&#x6E32;&#x67D3;&#x5668;&#xFF0C;&#x89E3;&#x6790;&#x5668;&#x548C;&#x8EAB;&#x4EFD;&#x8BA4;&#x8BC1;&#x7C7B;&#x3002;</p>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x53EA;&#x6709;<code>GET</code>&#x65B9;&#x6CD5;&#x4F1A;&#x88AB;&#x5141;&#x8BB8;&#x3002;&#x5176;&#x4ED6;&#x65B9;&#x6CD5;&#x5C06;&#x4F1A;&#x8FD4;&#x56DE;<code>&quot;405 Method Not Allowed&quot;</code>&#x3002;&#x5982;&#x679C;&#x8981;&#x6539;&#x53D8;&#x8FD9;&#x79CD;&#x884C;&#x4E3A;&#xFF0C;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x89C6;&#x56FE;&#x5141;&#x8BB8;&#x54EA;&#x4E9B;&#x65B9;&#x6CD5;&#xFF0C;&#x6BD4;&#x5982;&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">@api_view([&apos;GET&apos;, &apos;POST&apos;])</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hello_world</span><span class="hljs-params">(request)</span>:</span>
+    <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&apos;POST&apos;</span>:
+        <span class="hljs-keyword">return</span> Response({<span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;Got some data!&quot;</span>, <span class="hljs-string">&quot;data&quot;</span>: request.data})
+    <span class="hljs-keyword">return</span> Response({<span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;Hello, world!&quot;</span>})
+</code></pre>
+<h4 id="api&#x7B56;&#x7565;-&#x88C5;&#x9970;&#x5668;">API&#x7B56;&#x7565; &#x88C5;&#x9970;&#x5668;</h4>
+<p>REST framework&#x63D0;&#x4F9B;&#x4E86;&#x5176;&#x4ED6;&#x7684;&#x88C5;&#x9970;&#x5668;&#xFF0C;&#x7528;&#x4E8E;&#x7ED9;&#x4F60;&#x7684;&#x89C6;&#x56FE;&#x589E;&#x52A0;&#x4E00;&#x4E9B;&#x8BBE;&#x7F6E;&#xFF0C;&#x7528;&#x4E8E;&#x8986;&#x76D6;&#x9ED8;&#x8BA4;&#x7684;&#x8BBE;&#x7F6E;&#x3002;</p>
+<p>&#x8FD9;&#x5FC5;&#x987B;&#x653E;&#x7F6E;&#x5728;<code>@api_view</code>&#x88C5;&#x9970;&#x5668;&#x7684;&#x4E0B;&#x9762;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#xFF0C;&#x9650;&#x5236;(<a href="throttling.html">&#x9650;&#x6D41;</a>)&#x7684;&#x89C6;&#x56FE;&#x6BCF;&#x5929;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x53EA;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x4E00;&#x6B21;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x88C5;&#x9970;&#x5668;<code>@throttle_classes</code>&#xFF0C;&#x5E76;&#x628A;&#x9650;&#x5236;&#x7B56;&#x7565;&#x7C7B;&#x4EE5;&#x5217;&#x8868;&#x7684;&#x5F62;&#x5F0F;&#x4F20;&#x9012;&#x7ED9;&#x8FD9;&#x4E2A;&#x88C5;&#x9970;&#x5668;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> rest_framework.decorators <span class="hljs-keyword">import</span> api_view, throttle_classes
+<span class="hljs-keyword">from</span> rest_framework.throttling <span class="hljs-keyword">import</span> UserRateThrottle
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">OncePerDayUserThrottle</span><span class="hljs-params">(UserRateThrottle)</span>:</span>
+        rate = <span class="hljs-string">&apos;1/day&apos;</span>
+
+<span class="hljs-meta">@api_view([&apos;GET&apos;])</span>
+<span class="hljs-meta">@throttle_classes([OncePerDayUserThrottle])</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">view</span><span class="hljs-params">(request)</span>:</span>
+    <span class="hljs-keyword">return</span> Response({<span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;Hello for today! See you tomorrow!&quot;</span>})
+</code></pre>
+<p>&#x8FD9;&#x4E9B;&#x88C5;&#x9970;&#x5668;&#x5BF9;&#x5E94;<code>APIView</code>&#x4E2D;&#x8BBE;&#x7F6E;&#x7684;&#x5B50;&#x7C7B;&#xFF0C;&#x4ED6;&#x4EEC;&#x529F;&#x80FD;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;</p>
+<p>&#x53EF;&#x7528;&#x7684;&#x88C5;&#x9970;&#x5668;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li><code>@renderer_classes(...)</code></li>
+<li><code>@parser_classes(...)</code></li>
+<li><code>@authentication_classes(...)</code></li>
+<li><code>@throttle_classes(...)</code></li>
+<li><code>@permission_classes(...)</code></li>
+</ul>
+<p>&#x6BCF;&#x4E2A;&#x88C5;&#x9970;&#x5668;&#xFF0C;&#x81F3;&#x5C11;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x4E3A;list&#x6216;&#x8005;tuple&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x5E76;&#x4E14;&#x5143;&#x7D20;&#x662F;&#x4E00;&#x4E2A;&#x7C7B;&#x3002;</p>
+<h4 id="&#x89C6;&#x56FE;schema-&#x88C5;&#x9970;&#x5668;">&#x89C6;&#x56FE;schema &#x88C5;&#x9970;&#x5668;</h4>
+<p>&#x5982;&#x679C;&#x8981;&#x7ED9;&#x57FA;&#x4E8E;&#x51FD;&#x6570;&#x7684;&#x89C6;&#x56FE;&#xFF0C;&#x8986;&#x76D6;&#x9ED8;&#x8BA4;&#x7684;schema&#x751F;&#x6210;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>@schema</code>&#x88C5;&#x9970;&#x5668;&#xFF0C;&#x540C;&#x6837;&#x7684;&#xFF0C;&#x8FD9;&#x4E2A;&#x88C5;&#x9970;&#x5668;&#x5FC5;&#x987B;&#x5728;<code>@api_view</code>&#x88C5;&#x9970;&#x5668;&#x7684;&#x4E0B;&#x9762;&#x3002; &#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> rest_framework.decorators <span class="hljs-keyword">import</span> api_view, schema
+<span class="hljs-keyword">from</span> rest_framework.schemas <span class="hljs-keyword">import</span> AutoSchema
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CustomAutoSchema</span><span class="hljs-params">(AutoSchema)</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_link</span><span class="hljs-params">(self, path, method, base_url)</span>:</span>
+        <span class="hljs-comment"># override view introspection here...</span>
+
+<span class="hljs-meta">@api_view([&apos;GET&apos;])</span>
+<span class="hljs-meta">@schema(CustomAutoSchema())</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">view</span><span class="hljs-params">(request)</span>:</span>
+    <span class="hljs-keyword">return</span> Response({<span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;Hello for today! See you tomorrow!&quot;</span>})
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x88C5;&#x9970;&#x5668;&#x7684;&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;<code>AutoSchema</code>&#x7684;&#x5B9E;&#x4F8B;&#x3002;&#x5177;&#x4F53;&#x53C2;&#x8003;&#x6587;&#x6863;<a href="schemas.html">schemas</a>&#x3002;&#x5F53;&#x7136;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4F20;&#x9012;&#x4E00;&#x4E2A;<code>None</code>&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">@api_view([&apos;GET&apos;])</span>
+<span class="hljs-meta">@schema(None)</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">view</span><span class="hljs-params">(request)</span>:</span>
+    <span class="hljs-keyword">return</span> Response({<span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;Will not appear in schema!&quot;</span>})
+</code></pre>
+<hr>
+<p>&#x53C2;&#x8003;&#x94FE;&#x63A5;&#xFF1A;</p>
+<ul>
+<li><a href="http://www.cdrf.co/" target="_blank">http://www.cdrf.co/</a></li>
+<li></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="responses.html" class="navigation navigation-prev " aria-label="Previous page: Responses">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="gviews.html" class="navigation navigation-next " aria-label="Next page: 通用视图Generic views">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"视图Views","level":"4.3","depth":1,"next":{"title":"通用视图Generic views","level":"4.4","depth":1,"path":"api/gviews.md","ref":"api/gviews.md","articles":[]},"previous":{"title":"Responses","level":"4.2","depth":1,"path":"api/responses.md","ref":"api/responses.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","sharing-plus","search-pro","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"search-pro":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","qq","linkedin","qzone","douban"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"nick","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook学习笔记","links":{"sidebar":{"Author's Blog":"http://ibash.cc"}},"gitbook":"*","description":"Django REST framework 3 中文文档"},"file":{"path":"api/views.md","mtime":"2018-03-17T17:11:50.463Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-17T17:41:04.421Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

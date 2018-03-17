@@ -1,0 +1,1216 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>解析器Parsers · GitBook学习笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="nick">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="renderers.html" />
+    
+    
+    <link rel="prev" href="routers.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://ibash.cc" target="_blank" class="custom-link">Author's Blog</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">安装介绍</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../home/install.html">
+            
+                <a href="../home/install.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../home/example.html">
+            
+                <a href="../home/example.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    举例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">快速上手</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../quickstart/project.html">
+            
+                <a href="../quickstart/project.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    创建项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../quickstart/serializers.html">
+            
+                <a href="../quickstart/serializers.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../quickstart/views.html">
+            
+                <a href="../quickstart/views.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../quickstart/urls.html">
+            
+                <a href="../quickstart/urls.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../quickstart/settings.html">
+            
+                <a href="../quickstart/settings.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    Settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../quickstart/testing.html">
+            
+                <a href="../quickstart/testing.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    测试API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">教程</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../tutorial/serialization.html">
+            
+                <a href="../tutorial/serialization.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../tutorial/req-resp.html">
+            
+                <a href="../tutorial/req-resp.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    Requests & Responses
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../tutorial/classview.html">
+            
+                <a href="../tutorial/classview.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    类视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../tutorial/auth-perms.html">
+            
+                <a href="../tutorial/auth-perms.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    认证和权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../tutorial/hyperlink.html">
+            
+                <a href="../tutorial/hyperlink.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    关系和超链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../tutorial/routers.html">
+            
+                <a href="../tutorial/routers.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    视图集合和路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../tutorial/coreapi.html">
+            
+                <a href="../tutorial/coreapi.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    coreapi
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">API 指南</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="requests.html">
+            
+                <a href="requests.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Requests
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="responses.html">
+            
+                <a href="responses.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    Responses
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="views.html">
+            
+                <a href="views.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    视图Views
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="gviews.html">
+            
+                <a href="gviews.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    通用视图Generic views
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="viewsets.html">
+            
+                <a href="viewsets.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    视图组Viewsets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="routers.html">
+            
+                <a href="routers.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    路由器Routers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.7" data-path="parsers.html">
+            
+                <a href="parsers.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    解析器Parsers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="renderers.html">
+            
+                <a href="renderers.html">
+            
+                    
+                        <b>4.8.</b>
+                    
+                    渲染器Renderers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="serializers.html">
+            
+                <a href="serializers.html">
+            
+                    
+                        <b>4.9.</b>
+                    
+                    序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="serializersfield.html">
+            
+                <a href="serializersfield.html">
+            
+                    
+                        <b>4.10.</b>
+                    
+                    Serializer fields
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="serializersrelat.html">
+            
+                <a href="serializersrelat.html">
+            
+                    
+                        <b>4.11.</b>
+                    
+                    Serializer relations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="validators.html">
+            
+                <a href="validators.html">
+            
+                    
+                        <b>4.12.</b>
+                    
+                    校验器Validators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" data-path="authentication.html">
+            
+                <a href="authentication.html">
+            
+                    
+                        <b>4.13.</b>
+                    
+                    身份验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.14" data-path="permissions.html">
+            
+                <a href="permissions.html">
+            
+                    
+                        <b>4.14.</b>
+                    
+                    权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.15" data-path="throttling.html">
+            
+                <a href="throttling.html">
+            
+                    
+                        <b>4.15.</b>
+                    
+                    限流Throttling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.16" data-path="filtering.html">
+            
+                <a href="filtering.html">
+            
+                    
+                        <b>4.16.</b>
+                    
+                    过滤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.17" data-path="pagination.html">
+            
+                <a href="pagination.html">
+            
+                    
+                        <b>4.17.</b>
+                    
+                    分页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.18" data-path="versioning.html">
+            
+                <a href="versioning.html">
+            
+                    
+                        <b>4.18.</b>
+                    
+                    API 版本化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.19" data-path="cnegotiation.html">
+            
+                <a href="cnegotiation.html">
+            
+                    
+                        <b>4.19.</b>
+                    
+                    内容协商Content negotiation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.20" data-path="metadata.html">
+            
+                <a href="metadata.html">
+            
+                    
+                        <b>4.20.</b>
+                    
+                    元数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.21" data-path="schemas.html">
+            
+                <a href="schemas.html">
+            
+                    
+                        <b>4.21.</b>
+                    
+                    Schemas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.22" data-path="formatsuffixes.html">
+            
+                <a href="formatsuffixes.html">
+            
+                    
+                        <b>4.22.</b>
+                    
+                    Format suffixes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.23" data-path="urls.html">
+            
+                <a href="urls.html">
+            
+                    
+                        <b>4.23.</b>
+                    
+                    Returning URLs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.24" data-path="exceptions.html">
+            
+                <a href="exceptions.html">
+            
+                    
+                        <b>4.24.</b>
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.25" data-path="statuscodes.html">
+            
+                <a href="statuscodes.html">
+            
+                    
+                        <b>4.25.</b>
+                    
+                    状态码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.26" data-path="testing.html">
+            
+                <a href="testing.html">
+            
+                    
+                        <b>4.26.</b>
+                    
+                    测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.27" data-path="settings.html">
+            
+                <a href="settings.html">
+            
+                    
+                        <b>4.27.</b>
+                    
+                    Settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">最佳实践</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../topics/docs.html">
+            
+                <a href="../topics/docs.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    API文档生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >解析器Parsers</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x89E3;&#x6790;&#x5668;parsers">&#x89E3;&#x6790;&#x5668;Parsers</h2>
+<blockquote>
+<p>&#x673A;&#x5668;&#x4EA4;&#x4E92;&#x5F0F;Web&#x670D;&#x52A1;&#x66F4;&#x503E;&#x5411;&#x4E8E;&#x4F7F;&#x7528;&#x66F4;&#x591A;&#x7684;&#x7ED3;&#x6784;&#x5316;&#x683C;&#x5F0F;&#x6765;&#x53D1;&#x9001;&#x6570;&#x636E;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x7B80;&#x5355;&#x7684;&#x8868;&#x5355;&#x683C;&#x5F0F;&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x4ED6;&#x4EEC;&#x4F1A;&#x53D1;&#x9001;&#x6BD4;&#x8868;&#x5355;&#x66F4;&#x590D;&#x6742;&#x7684;&#x6570;&#x636E;&#x3002;<br>&#x2014;&#x2014; Malcom Tredinnick</p>
+</blockquote>
+<p>REST framework&#x5305;&#x542B;&#x4E86;&#x8BB8;&#x591A;&#x5185;&#x7F6E;&#x7684;&#x89E3;&#x6790;&#x5668;&#x7C7B;&#xFF0C;&#x5141;&#x8BB8;&#x60A8;&#x4F7F;&#x7528;&#x5404;&#x79CD;<code>Media Types</code>&#x6765;&#x63A5;&#x6536;&#x8BF7;&#x6C42;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x652F;&#x6301;&#x5B9A;&#x4E49;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x89E3;&#x6790;&#x5668;&#xFF0C;&#x8FD9;&#x4F7F;&#x5F97;&#x4F60;&#x53EF;&#x4EE5;&#x7075;&#x6D3B;&#x7684;&#x8BBE;&#x8BA1;&#x4F60;&#x7684;API&#x6240;&#x63A5;&#x6536;&#x7684;<code>Media Types</code>&#x3002;</p>
+<h4 id="&#x89E3;&#x6790;&#x5668;&#x662F;&#x5982;&#x4F55;&#x786E;&#x5B9A;&#x7684;">&#x89E3;&#x6790;&#x5668;&#x662F;&#x5982;&#x4F55;&#x786E;&#x5B9A;&#x7684;</h4>
+<p>&#x89C6;&#x56FE;&#x4E2D;&#x6709;&#x6548;&#x7684;&#x89E3;&#x6790;&#x5668;&#x603B;&#x662F;&#x88AB;&#x5B9A;&#x4E49;&#x4E3A;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x7C7B;&#x7684;&#x5217;&#x8868;&#x3002;&#x5F53;<code>request.data</code>&#x4E2D;&#x7684;&#x6570;&#x636E;&#x88AB;&#x8BBF;&#x95EE;&#x7684;&#x65F6;&#x5019;&#xFF0C;REST framework&#x5C06;&#x4F1A;&#x68C0;&#x67E5;&#x4F20;&#x8FDB;&#x6765;&#x7684;&#x8BF7;&#x6C42;&#x4E2D;&#x7684;HTTP &#x5934;&#x4E2D;&#x7684;<code>Content-Type</code>&#x6765;&#x786E;&#x5B9A;&#x4F7F;&#x7528;&#x54EA;&#x79CD;&#x89E3;&#x6790;&#x5668;&#x6765;&#x89E3;&#x6790;&#x8BF7;&#x6C42;&#x6570;&#x636E;(<code>request data</code>)&#x3002;</p>
+<hr>
+<p>&#x6CE8;&#x610F;&#xFF1A; &#x5728;&#x5F00;&#x53D1;HTTP &#x5BA2;&#x6237;&#x7AEF;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5E94;&#x8BE5;&#x59CB;&#x7EC8;&#x8BB0;&#x4F4F;&#x5728;&#x8BF7;&#x6C42;&#x4E2D;&#x8BBE;&#x7F6E;<code>Content-Type</code>&#x5934;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x8BBE;&#x7F6E;content type&#xFF0C;&#x5927;&#x591A;&#x6570;&#x5BA2;&#x6237;&#x7AEF;&#x9ED8;&#x8BA4;&#x5C06;&#x4F1A;&#x4F7F;&#x7528;<code>&apos;application/x-www-form-urlencoded&apos;</code>&#xFF0C; &#x8FD9;&#x53EF;&#x80FD;&#x4E0D;&#x662F;&#x4F60;&#x60F3;&#x8981;&#x7684;&#x3002;</p>
+<p>&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x8981;&#x7528;<code>JQuery</code>&#x7684;<code>.ajax()</code>&#x65B9;&#x6CD5;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x4F7F;&#x7528;JSON&#x7F16;&#x7801;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x5E94;&#x8BE5;&#x59CB;&#x7EC8;&#x8BBE;&#x7F6E;<code>contentType: &apos;application/json&apos;</code>&#x3002;</p>
+<hr>
+<h4 id="&#x8BBE;&#x7F6E;&#x89E3;&#x6790;&#x5668;">&#x8BBE;&#x7F6E;&#x89E3;&#x6790;&#x5668;</h4>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x89E3;&#x6790;&#x5668;&#x7684;&#x8BBE;&#x7F6E;&#x53EF;&#x80FD;&#x662F;&#x901A;&#x8FC7;<code>DEFAULT_PARSER_CLASSES</code>&#x8BBE;&#x7F6E;&#x7684;&#x5168;&#x5C40;&#x7684;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x4E0B;&#x9762;&#x7684;&#x8BBE;&#x7F6E;&#x5C06;&#x4EC5;&#x4EC5;&#x5141;&#x8BB8;<code>JSON</code>&#x7684;&#x8BF7;&#x6C42;&#xFF0C;&#x4EE3;&#x66FF;&#x4E86;&#x9ED8;&#x8BA4;&#x7684;<code>JSON or form data</code>&#x7684;&#x8BBE;&#x7F6E;&#x3002;</p>
+<pre><code class="lang-python">REST_FRAMEWORK = {
+    <span class="hljs-string">&apos;DEFAULT_PARSER_CLASSES&apos;</span>: (
+        <span class="hljs-string">&apos;rest_framework.parsers.JSONParser&apos;</span>,
+    )
+}
+</code></pre>
+<p>&#x4F60;&#x8FD8;&#x53EF;&#x4EE5;&#x4E3A;&#x57FA;&#x4E8E;<code>APIView</code>&#x7684;&#x5355;&#x4E2A;&#x89C6;&#x56FE;&#x6216;&#x8005;&#x89C6;&#x56FE;&#x96C6;&#x5408;(<code>viewset</code>)&#x8BBE;&#x7F6E;&#x89E3;&#x6790;&#x5668;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> rest_framework.parsers <span class="hljs-keyword">import</span> JSONParser
+<span class="hljs-keyword">from</span> rest_framework.response <span class="hljs-keyword">import</span> Response
+<span class="hljs-keyword">from</span> rest_framework.views <span class="hljs-keyword">import</span> APIView
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ExampleView</span><span class="hljs-params">(APIView)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;
+    A view that can accept POST requests with JSON content.
+    &quot;&quot;&quot;</span>
+    parser_classes = (JSONParser,)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post</span><span class="hljs-params">(self, request, format=None)</span>:</span>
+        <span class="hljs-keyword">return</span> Response({<span class="hljs-string">&apos;received data&apos;</span>: request.data})
+</code></pre>
+<p>&#x6216;&#x8005;&#x4E3A;&#x57FA;&#x4E8E;<code>@api_view</code>&#x88C5;&#x9970;&#x5668;&#x7684;&#x51FD;&#x6570;&#x89C6;&#x56FE;&#x8BBE;&#x7F6E;&#x89E3;&#x6790;&#x5668;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> rest_framework.decorators <span class="hljs-keyword">import</span> api_view
+<span class="hljs-keyword">from</span> rest_framework.decorators <span class="hljs-keyword">import</span> parser_classes
+<span class="hljs-keyword">from</span> rest_framework.parsers <span class="hljs-keyword">import</span> JSONParser
+
+<span class="hljs-meta">@api_view([&apos;POST&apos;])</span>
+<span class="hljs-meta">@parser_classes((JSONParser,))</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">example_view</span><span class="hljs-params">(request, format=None)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;
+    A view that can accept POST requests with JSON content.
+    &quot;&quot;&quot;</span>
+    <span class="hljs-keyword">return</span> Response({<span class="hljs-string">&apos;received data&apos;</span>: request.data})
+</code></pre>
+<hr>
+<p><br>
+<br>
+<br>
+<br></p>
+<h3 id="api-&#x53C2;&#x8003;">API &#x53C2;&#x8003;</h3>
+<p>&#x5173;&#x4E8E;&#x89E3;&#x6790;&#x5668;&#x7684;&#x6E90;&#x7801;&#x4F4D;&#x7F6E;&#xFF1A; <code>rest_framework.parsers</code></p>
+<h4 id="jsonparser&#x89E3;&#x6790;&#x5668;"><code>JSONParser</code>&#x89E3;&#x6790;&#x5668;</h4>
+<p>&#x89E3;&#x6790;&#x8BF7;&#x6C42;&#x5185;&#x5BB9;&#x662F;<code>JSON</code>&#x683C;&#x5F0F;&#x7684;&#x6570;&#x636E;</p>
+<p>HTTP&#x8BF7;&#x6C42;&#x4E2D;&#x7684;<code>.media_type</code>&#x4E3A; <code>application/json</code></p>
+<h4 id="formparser&#x89E3;&#x6790;&#x5668;"><code>FormParser</code>&#x89E3;&#x6790;&#x5668;</h4>
+<p>&#x89E3;&#x6790;&#x8BF7;&#x6C42;&#x5185;&#x5BB9;&#x662F;HTML&#x8868;&#x5355;&#x7684;&#x6570;&#x636E;&#x3002;<code>request.data</code>&#x7684;&#x5185;&#x5BB9;&#x5C06;&#x88AB;<code>QueryDict</code>&#x586B;&#x5145;&#x3002;</p>
+<p>&#x6E90;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FormParser</span><span class="hljs-params">(BaseParser)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;
+    Parser for form data.
+    &quot;&quot;&quot;</span>
+    media_type = <span class="hljs-string">&apos;application/x-www-form-urlencoded&apos;</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">parse</span><span class="hljs-params">(self, stream, media_type=None, parser_context=None)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;
+        Parses the incoming bytestream as a URL encoded form,
+        and returns the resulting QueryDict.
+        &quot;&quot;&quot;</span>
+        parser_context = parser_context <span class="hljs-keyword">or</span> {}
+        encoding = parser_context.get(<span class="hljs-string">&apos;encoding&apos;</span>, settings.DEFAULT_CHARSET)
+        data = QueryDict(stream.read(), encoding=encoding)  <span class="hljs-comment">### &#x6CE8;&#x610F;&#x8FD9;&#x91CC;&#x8FD4;&#x56DE;&#x7684; QueryDict</span>
+        <span class="hljs-keyword">return</span> data
+</code></pre>
+<p>&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4F1A;&#x5C06;<code>FormParser</code>&#x548C;<code>MultiPartParser</code>&#x6765;&#x4E00;&#x8D77;&#x4F7F;&#x7528;&#xFF0C;&#x4EE5;&#x4FBF;&#x5B8C;&#x7F8E;&#x7684;&#x652F;&#x6301;HTML&#x8868;&#x5355;&#x6570;&#x636E;&#x3002;</p>
+<p>HTTP&#x8BF7;&#x6C42;&#x4E2D;&#x7684;<code>.media_type</code>&#x4E3A; <code>application/x-www-form-urlencoded</code></p>
+<h4 id="multipartparser&#x89E3;&#x6790;&#x5668;"><code>MultiPartParser</code>&#x89E3;&#x6790;&#x5668;</h4>
+<p>&#x89E3;&#x6790;&#x652F;&#x6301;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x7684;&#x591A;&#x90E8;&#x5206;HTML&#x8868;&#x5355;&#x5185;&#x5BB9;&#x3002;</p>
+<p>&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4F1A;&#x5C06;<code>FormParser</code>&#x548C;<code>MultiPartParser</code>&#x6765;&#x4E00;&#x8D77;&#x4F7F;&#x7528;&#xFF0C;&#x4EE5;&#x4FBF;&#x5B8C;&#x7F8E;&#x7684;&#x652F;&#x6301;HTML&#x8868;&#x5355;&#x6570;&#x636E;&#x3002;</p>
+<p>HTTP&#x8BF7;&#x6C42;&#x4E2D;&#x7684;<code>.media_type</code>&#x4E3A; <code>multipart/form-data</code></p>
+<h4 id="fileuploadparser&#x89E3;&#x6790;&#x5668;"><code>FileUploadParser</code>&#x89E3;&#x6790;&#x5668;</h4>
+<p>&#x89E3;&#x6790;&#x539F;&#x59CB;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x7684;&#x5185;&#x5BB9;&#x3002;<code>request.data</code>&#x7684;&#x5C5E;&#x6027;&#x5C06;&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x7684;&#x5355;&#x4E2A;&#x5173;&#x952E;&#x5B57;<code>&apos;file&apos;</code>&#x7684;&#x5B57;&#x5178;&#x3002;</p>
+<p>&#x76F8;&#x5173;&#x6E90;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FileUploadParser</span><span class="hljs-params">(BaseParser)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;
+    Parser for file upload data.
+    &quot;&quot;&quot;</span>
+    media_type = <span class="hljs-string">&apos;*/*&apos;</span>
+    errors = {
+        <span class="hljs-string">&apos;unhandled&apos;</span>: <span class="hljs-string">&apos;FileUpload parse error - none of upload handlers can handle the stream&apos;</span>,
+        <span class="hljs-string">&apos;no_filename&apos;</span>: <span class="hljs-string">&apos;Missing filename. Request should include a Content-Disposition header with a filename parameter.&apos;</span>,
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">parse</span><span class="hljs-params">(self, stream, media_type=None, parser_context=None)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;
+        Treats the incoming bytestream as a raw file upload and returns
+        a `DataAndFiles` object.
+
+        `.data` will be None (we expect request body to be a file content).
+        `.files` will be a `QueryDict` containing one &apos;file&apos; element.
+        &quot;&quot;&quot;</span>
+        parser_context = parser_context <span class="hljs-keyword">or</span> {}
+        request = parser_context[<span class="hljs-string">&apos;request&apos;</span>]
+        encoding = parser_context.get(<span class="hljs-string">&apos;encoding&apos;</span>, settings.DEFAULT_CHARSET)
+        meta = request.META
+        upload_handlers = request.upload_handlers
+        filename = self.get_filename(stream, media_type, parser_context)
+
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> filename:
+            <span class="hljs-keyword">raise</span> ParseError(self.errors[<span class="hljs-string">&apos;no_filename&apos;</span>])
+
+        <span class="hljs-comment"># Note that this code is extracted from Django&apos;s handling of</span>
+        <span class="hljs-comment"># file uploads in MultiPartParser.</span>
+        content_type = meta.get(<span class="hljs-string">&apos;HTTP_CONTENT_TYPE&apos;</span>,
+                                meta.get(<span class="hljs-string">&apos;CONTENT_TYPE&apos;</span>, <span class="hljs-string">&apos;&apos;</span>))
+        <span class="hljs-keyword">try</span>:
+            content_length = int(meta.get(<span class="hljs-string">&apos;HTTP_CONTENT_LENGTH&apos;</span>,
+                                          meta.get(<span class="hljs-string">&apos;CONTENT_LENGTH&apos;</span>, <span class="hljs-number">0</span>)))
+        <span class="hljs-keyword">except</span> (ValueError, TypeError):
+            content_length = <span class="hljs-keyword">None</span>
+
+        <span class="hljs-comment"># See if the handler will want to take care of the parsing.</span>
+        <span class="hljs-keyword">for</span> handler <span class="hljs-keyword">in</span> upload_handlers:
+            result = handler.handle_raw_input(stream,
+                                              meta,
+                                              content_length,
+                                              <span class="hljs-keyword">None</span>,
+                                              encoding)
+            <span class="hljs-keyword">if</span> result <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">None</span>:
+                <span class="hljs-keyword">return</span> DataAndFiles({}, {<span class="hljs-string">&apos;file&apos;</span>: result[<span class="hljs-number">1</span>]})   <span class="hljs-comment">### &#x770B;&#x8FD9;&#x91CC;&#x8FD4;&#x56DE;&#x7684;&#x5B57;&#x5178;</span>
+
+        <span class="hljs-comment"># This is the standard case.</span>
+        possible_sizes = [x.chunk_size <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> upload_handlers <span class="hljs-keyword">if</span> x.chunk_size]
+        chunk_size = min([<span class="hljs-number">2</span> ** <span class="hljs-number">31</span> - <span class="hljs-number">4</span>] + possible_sizes)
+        chunks = ChunkIter(stream, chunk_size)
+        counters = [<span class="hljs-number">0</span>] * len(upload_handlers)
+
+        <span class="hljs-keyword">for</span> index, handler <span class="hljs-keyword">in</span> enumerate(upload_handlers):
+            <span class="hljs-keyword">try</span>:
+                handler.new_file(<span class="hljs-keyword">None</span>, filename, content_type,
+                                 content_length, encoding)
+            <span class="hljs-keyword">except</span> StopFutureHandlers:
+                upload_handlers = upload_handlers[:index + <span class="hljs-number">1</span>]
+                <span class="hljs-keyword">break</span>
+
+        <span class="hljs-keyword">for</span> chunk <span class="hljs-keyword">in</span> chunks:
+            <span class="hljs-keyword">for</span> index, handler <span class="hljs-keyword">in</span> enumerate(upload_handlers):
+                chunk_length = len(chunk)
+                chunk = handler.receive_data_chunk(chunk, counters[index])
+                counters[index] += chunk_length
+                <span class="hljs-keyword">if</span> chunk <span class="hljs-keyword">is</span> <span class="hljs-keyword">None</span>:
+                    <span class="hljs-keyword">break</span>
+
+        <span class="hljs-keyword">for</span> index, handler <span class="hljs-keyword">in</span> enumerate(upload_handlers):
+            file_obj = handler.file_complete(counters[index])
+            <span class="hljs-keyword">if</span> file_obj <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">None</span>:
+                <span class="hljs-keyword">return</span> DataAndFiles({}, {<span class="hljs-string">&apos;file&apos;</span>: file_obj})   <span class="hljs-comment">### &#x770B;&#x8FD9;&#x91CC;&#x8FD4;&#x56DE;&#x7684;&#x5B57;&#x5178;</span>
+
+        <span class="hljs-keyword">raise</span> ParseError(self.errors[<span class="hljs-string">&apos;unhandled&apos;</span>])
+</code></pre>
+<p>&#x5982;&#x679C;&#x5728;URL&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#x4E2D;&#x6709;<code>filename</code>&#xFF0C;&#x8C03;&#x7528;&#x4E86;&#x76F8;&#x5173;&#x7684;&#x89C6;&#x56FE;&#xFF0C;&#x89C6;&#x56FE;&#x8C03;&#x7528;&#x4E86;<code>FileUploadParser</code>&#x89E3;&#x6790;&#x5668;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#x5C06;&#x4F1A;&#x7528;&#x4F5C;&#x6587;&#x4EF6;&#x540D;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5E76;&#x6CA1;&#x6709;URL&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x5BA2;&#x6237;&#x7AEF;&#x5FC5;&#x987B;&#x5728;HTTP&#x5934;&#x4E2D;&#x8BBE;&#x7F6E;&#x6587;&#x4EF6;&#x540D;&#x3002;&#x6BD4;&#x5982;&#x8FD9;&#x6837;&#xFF1A; <code>Content-Disposition: attachment; filename=upload.jpg</code>&#x3002;</p>
+<p>HTTP&#x8BF7;&#x6C42;&#x4E2D;&#x7684;<code>.media_type</code>&#x4E3A; <code>*/*</code></p>
+<p>&#x6CE8;&#x610F;&#xFF1A;</p>
+<ul>
+<li>&#x89E3;&#x6790;&#x5668;<code>FileUploadParser</code>&#x5E94;&#x8BE5;&#x7528;&#x4E8E;&#x672C;&#x5730;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x4E0A;&#x4F20;&#x539F;&#x59CB;&#x7684;&#x6570;&#x636E;&#x7684;&#x8BF7;&#x6C42;&#x3002;&#x5982;&#x679C;&#x662F;&#x57FA;&#x4E8E;Web&#x7AEF;&#x7684;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#xFF0C;&#x6216;&#x8005;&#x662F;&#x4E3A;&#x672C;&#x5730;&#x5BA2;&#x6237;&#x7AEF;&#x652F;&#x6301;<code>multipart upload</code>&#xFF0C;&#x90A3;&#x4E48;&#x89E3;&#x6790;&#x5668;&#x5E94;&#x8BE5;&#x7528;<code>MultiPartParser</code>&#x3002;</li>
+<li>&#x7531;&#x4E8E;<code>FileUploadParser</code>&#x53EF;&#x4EE5;&#x5339;&#x914D;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x7684;Media&#x7C7B;&#x578B;&#xFF0C;&#x6240;&#x4EE5;&#x901A;&#x5E38;&#x8FD9;&#x4E2A;&#x89E3;&#x6790;&#x5668;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x5728;APIView&#x4E0A;&#x3002;</li>
+<li>&#x89E3;&#x6790;&#x5668;<code>FileUploadParser</code>&#x4F7F;&#x7528;&#x7684;&#x662F;Django&#x7684;<code>request.upload_handlers</code>&#x3002;</li>
+</ul>
+<p>&#x57FA;&#x672C;&#x4F7F;&#x7528;&#x6848;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># views.py</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FileUploadView</span><span class="hljs-params">(views.APIView)</span>:</span>
+    parser_classes = (FileUploadParser,)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">put</span><span class="hljs-params">(self, request, filename, format=None)</span>:</span>
+        file_obj = request.data[<span class="hljs-string">&apos;file&apos;</span>]
+        <span class="hljs-comment"># ...</span>
+        <span class="hljs-comment"># do some stuff with uploaded file</span>
+        <span class="hljs-comment"># ...</span>
+        <span class="hljs-keyword">return</span> Response(status=<span class="hljs-number">204</span>)
+
+<span class="hljs-comment"># urls.py</span>
+urlpatterns = [
+    <span class="hljs-comment"># ...</span>
+    url(<span class="hljs-string">r&apos;^upload/(?P&lt;filename&gt;[^/]+)$&apos;</span>, FileUploadView.as_view())
+]
+</code></pre>
+<hr>
+<p><br>
+<br>
+<br>
+<br></p>
+<h3 id="&#x81EA;&#x5B9A;&#x4E49;-&#x89E3;&#x6790;&#x5668;">&#x81EA;&#x5B9A;&#x4E49; &#x89E3;&#x6790;&#x5668;</h3>
+<p>&#x8981;&#x60F3;&#x5B9E;&#x73B0;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x89E3;&#x6790;&#x5668;&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x7EE7;&#x627F;<code>BaseParser</code>&#x7C7B;&#xFF0C;&#x5E76;&#x4E14;&#x8981;&#x8BBE;&#x7F6E;<code>.media_type</code>&#x5C5E;&#x6027;&#xFF0C;&#x8FD8;&#x8981;&#x5B9E;&#x73B0;<code>.parse(self, stream, media_type, parser_context)</code>&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x88AB;&#x586B;&#x5145;&#x5728;<code>request.data</code>&#x4E2D;&#x3002;</p>
+<p>&#x5E94;&#x8BE5;&#x7ED9;<code>.parser()</code>&#x65B9;&#x6CD5;&#x4E2D;&#x4F20;&#x9012;&#x7684;&#x53C2;&#x6570;&#x6709;&#xFF1A;</p>
+<ul>
+<li><code>stream</code>: &#x4E00;&#x4E2A;&#x8868;&#x793A;request body&#x7684;&#x6D41;&#x5F0F;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><code>media_type</code>: &#x53EF;&#x9009;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E86;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x4EE3;&#x8868;&#x8FDB;&#x5165;&#x8BF7;&#x6C42;&#x7684;&#x5185;&#x5BB9;&#x7684;Media&#x7C7B;&#x578B;&#x3002;&#x4F9D;&#x8D56;HTTP&#x8BF7;&#x6C42;&#x5934;&#x4E2D;&#x7684;<code>Content-Type:</code>&#x3002;</li>
+<li><code>parser_context</code>: &#x53EF;&#x9009;&#x7684;&#x3002;&#x5982;&#x679C;&#x63D0;&#x4F9B;&#xFF0C;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x5C06;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x5178;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x542B;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x5206;&#x6790;&#x8BF7;&#x6C42;&#x5185;&#x5BB9;&#x7684;&#x4EFB;&#x4F55;&#x9644;&#x52A0;&#x4E0A;&#x4E0B;&#x6587;&#x3002;&#x9ED8;&#x8BA4;&#x5305;&#x542B;&#x4EE5;&#x4E0B;key&#xFF0C; <code>view</code>, <code>request</code>, <code>args</code>&#x548C;<code>kwargs</code>&#x3002;</li>
+</ul>
+<h4 id="example"><code>Example</code></h4>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x6587;&#x672C;&#x89E3;&#x6790;&#x5668;&#x7684;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF0C;&#x6700;&#x540E;&#x4F1A;&#x5C06;&#x6587;&#x672C;&#x7684;&#x5185;&#x5BB9;&#x5B57;&#x7B26;&#x4E32;&#x4F5C;&#x4E3A;&#x6570;&#x636E;&#x586B;&#x5145;&#x5230;<code>request.data</code>&#x4E2D;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PlainTextParser</span><span class="hljs-params">(BaseParser)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;
+    Plain text parser.
+    &quot;&quot;&quot;</span>
+    media_type = <span class="hljs-string">&apos;text/plain&apos;</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">parse</span><span class="hljs-params">(self, stream, media_type=None, parser_context=None)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;
+        Simply return a string representing the body of the request.
+        &quot;&quot;&quot;</span>
+        <span class="hljs-keyword">return</span> stream.read()
+</code></pre>
+<hr>
+<p><br>
+<br>
+<br>
+<br></p>
+<h3 id="&#x7B2C;&#x4E09;&#x65B9;&#x5305;">&#x7B2C;&#x4E09;&#x65B9;&#x5305;</h3>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E9B;&#x53EF;&#x7528;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x5305;&#x3002;</p>
+<h4 id="yaml">YAML</h4>
+<p><a href="https://jpadilla.github.io/django-rest-framework-yaml/" target="_blank">REST framework YAML</a>&#x63D0;&#x4F9B;&#x4E86;YAML&#x7684;&#x89E3;&#x6790;&#x548C;&#x6E32;&#x67D3;&#x652F;&#x6301;&#x3002;&#x4E4B;&#x524D;&#x5728;REST framework&#x6709;YAML&#x7684;&#x652F;&#x6301;&#xFF0C;&#x73B0;&#x5728;&#x4F7F;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x7684;&#x5305;&#x6765;&#x66FF;&#x4EE3;&#x3002;</p>
+<p>&#x4F7F;&#x7528;pip&#x5B89;&#x88C5;&#xFF1A;</p>
+<pre><code class="lang-shell">$ pip install djangorestframework-yaml
+</code></pre>
+<p>&#x4FEE;&#x6539;&#x4F60;&#x7684;REST framework&#x7684;&#x8BBE;&#x7F6E;&#xFF1A;</p>
+<pre><code class="lang-python">REST_FRAMEWORK = {
+    <span class="hljs-string">&apos;DEFAULT_PARSER_CLASSES&apos;</span>: (
+        <span class="hljs-string">&apos;rest_framework_yaml.parsers.YAMLParser&apos;</span>,
+    ),
+    <span class="hljs-string">&apos;DEFAULT_RENDERER_CLASSES&apos;</span>: (
+        <span class="hljs-string">&apos;rest_framework_yaml.renderers.YAMLRenderer&apos;</span>,
+    ),
+}
+</code></pre>
+<h4 id="xml">XML</h4>
+<p><a href="https://jpadilla.github.io/django-rest-framework-xml/" target="_blank">REST Framework XML</a>&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x975E;&#x6B63;&#x5F0F;&#x7684;XML&#x683C;&#x5F0F;&#x3002;</p>
+<p>&#x4F7F;&#x7528;pip&#x5B89;&#x88C5;&#xFF1A;</p>
+<pre><code class="lang-shell">$ pip install djangorestframework-xml
+</code></pre>
+<p>&#x4FEE;&#x6539;REST framework&#x7684;&#x8BBE;&#x7F6E;&#xFF1A;</p>
+<pre><code class="lang-python">REST_FRAMEWORK = {
+    <span class="hljs-string">&apos;DEFAULT_PARSER_CLASSES&apos;</span>: (
+        <span class="hljs-string">&apos;rest_framework_xml.parsers.XMLParser&apos;</span>,
+    ),
+    <span class="hljs-string">&apos;DEFAULT_RENDERER_CLASSES&apos;</span>: (
+        <span class="hljs-string">&apos;rest_framework_xml.renderers.XMLRenderer&apos;</span>,
+    ),
+}
+</code></pre>
+<h4 id="messagepack">MessagePack</h4>
+<p>MessagePack &#x662F;&#x4E00;&#x4E2A;&#x5FEB;&#x901F;&#x7684;&#x3001;&#x9AD8;&#x6548;&#x7684; &#x4E8C;&#x8FDB;&#x5236;&#x5E8F;&#x5217;&#x5316;&#x683C;&#x5F0F;&#x3002; <a href="https://github.com/juanriaza/django-rest-framework-msgpack" target="_blank">djangorestframework-msgpack</a>&#x5305;&#x4E3A;REST framework&#x63D0;&#x4F9B;&#x4E86;<code>MessagePack</code>&#x7684;&#x6E32;&#x67D3;&#x5668;&#x548C;&#x89E3;&#x6790;&#x5668;&#x3002;</p>
+<h4 id="&#x9A7C;&#x5CF0;-json">&#x9A7C;&#x5CF0; JSON</h4>
+<p><a href="https://github.com/vbabiy/djangorestframework-camel-case" target="_blank">djangorestframework-camel-case</a>&#x5305;&#x4E3A;REST framework&#x63D0;&#x4F9B;&#x4E86;&#x9A7C;&#x5CF0;JSON&#x7684;&#x6E32;&#x67D3;&#x5668;&#x548C;&#x89E3;&#x6790;&#x5668;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x5E8F;&#x5217;&#x5316;&#x7A0B;&#x5E8F;&#x4E2D;&#x4F7F;&#x7528;Python&#x98CE;&#x683C;&#x7684;&#x4E0B;&#x5212;&#x7EBF;&#x8BED;&#x6CD5;&#xFF0C;&#x800C;&#x6700;&#x540E;&#x5BFC;&#x51FA;&#x7684;&#x65F6;&#x5019;&#x4F7F;&#x7528;JavaScript&#x98CE;&#x683C;&#x7684;&#x9A7C;&#x5CF0;&#x8BED;&#x6CD5;&#x3002;</p>
+<hr>
+<p>&#x53C2;&#x8003;&#x94FE;&#x63A5;&#xFF1A;</p>
+<ul>
+<li><a href="https://jpadilla.github.io/django-rest-framework-yaml/" target="_blank">https://jpadilla.github.io/django-rest-framework-yaml/</a></li>
+<li><a href="https://jpadilla.github.io/django-rest-framework-xml/" target="_blank">https://jpadilla.github.io/django-rest-framework-xml/</a></li>
+<li><a href="https://github.com/juanriaza/django-rest-framework-msgpack" target="_blank">https://github.com/juanriaza/django-rest-framework-msgpack</a></li>
+<li><a href="https://github.com/vbabiy/djangorestframework-camel-case" target="_blank">https://github.com/vbabiy/djangorestframework-camel-case</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="routers.html" class="navigation navigation-prev " aria-label="Previous page: 路由器Routers">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="renderers.html" class="navigation navigation-next " aria-label="Next page: 渲染器Renderers">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"解析器Parsers","level":"4.7","depth":1,"next":{"title":"渲染器Renderers","level":"4.8","depth":1,"path":"api/renderers.md","ref":"api/renderers.md","articles":[]},"previous":{"title":"路由器Routers","level":"4.6","depth":1,"path":"api/routers.md","ref":"api/routers.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","sharing-plus","search-pro","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"search-pro":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","qq","linkedin","qzone","douban"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"nick","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook学习笔记","links":{"sidebar":{"Author's Blog":"http://ibash.cc"}},"gitbook":"*","description":"Django REST framework 3 中文文档"},"file":{"path":"api/parsers.md","mtime":"2018-03-17T17:11:50.460Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-17T17:41:04.421Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
